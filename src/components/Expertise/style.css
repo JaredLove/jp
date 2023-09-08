@@ -1,0 +1,107 @@
+/* Expertise Resume CSS */
+
+
+
+
+.resumeInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 250px;
+    
+  }
+  
+  .resumeTitle {
+    font-size: 30px;
+    color: var(--text);
+  }
+  
+  ul li {
+    list-style-type: none;
+  }
+  .resumeInfo ul li {
+    margin: 0 5px;
+  }
+  .resumeInfo ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    margin: 0 100px;
+  
+  }
+  
+  .icon {
+    color: var(--link);
+    font-size: 50px;
+  }
+
+  
+
+  
+  .borderInfo1 {
+    border: solid;
+    border-radius: .2%;
+    width: 400px;
+    height: 550px;
+    border-color: #393E46;
+    border-radius: 5%;
+    background-color: #393E46;
+  
+  }
+  .skill {
+    margin: 20px 300px;
+    list-style: none;
+  }
+  
+  .resumeLink {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .techList {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+
+
+
+.techList ul {
+display: grid;
+
+}
+
+.techList ul li {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: 5px 0;
+    
+}
+
+
+
+.resumeInfo ol {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px;
+
+}
+
+.resumeInfo ol li {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: 20px 0;
+    
+}
+
+

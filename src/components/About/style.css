@@ -1,0 +1,90 @@
+/* About me section css */
+.about {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .aboutContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin:100px;
+  }
+  
+  .aboutIconsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+  }
+  
+  .aboutIconsContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 300px;
+  }
+  
+  .aboutIcons {
+    font-size: 100px;
+    margin: 0 20px;
+    color: var(--teal);
+  }
+  
+  .aboutIcons h1 {
+    font-size: 34px;
+    font-weight: bold;
+    color: var(--secondary);
+    margin: 0 50px;
+  }
+  
+  .aboutIcons p {
+    font-size: 20px;
+    color: var(--white);
+  
+  }
+  
+  
+  .aboutImg {
+    width: 500px;
+    height: 500px;
+    border-radius: 10%;
+    margin-right: 100px;
+  }
+  
+  /* .aboutBorder {
+    background-color: var(--secondary);
+    width: 100%;
+  } */
+  
+  .aboutInfo {
+    color: var(--white);
+    font-size: 80px;
+    margin: 10px 0 40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .aboutMe p {
+    color: var(--white);
+    width: 50ch;
+    font-size: 20px;
+    margin: 0 0 15px;
+  }
+  .aboutMe h1 {
+    font-size: 30px;
+    
+  }
+  
+  .me {
+    width: 200px;
+    height: 200px;
+  }
+  
+  
+  /* About me section css */
