@@ -20,8 +20,7 @@ const transporter = nodemailer.createTransport({
     },
     tls: {
         ciphers:'SSLv3'
-    },
-    authMethod: 'PLAIN',
+    }
 });
 
 // Serve up static assets
