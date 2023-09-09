@@ -11,8 +11,8 @@ app.use(bodyParser.json());
 app.use(cors());
 // Configure your email transport using nodemailer
 const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: parseInt(process.env.SMTP_PORT),
+    host: 'smtp.office365.com',
+    port:  587,
     secure: process.env.SMTP_SECURE === 'true', 
     auth: {
         user: process.env.EMAIL_USERNAME,
