@@ -17,6 +17,11 @@ const transporter = nodemailer.createTransport({
     },
 });
 
+// Serve up static assets
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, '../client/build')));
+  }
+
 // Define a route to handle form submissions
 app.post('/api/contact', (req, res) => {
     const { name, email, message } = req.body;
@@ -27,7 +32,7 @@ app.post('/api/contact', (req, res) => {
     }
 
 
-    
+
     // Create the email message
     const mailOptions = {
         from: email,
