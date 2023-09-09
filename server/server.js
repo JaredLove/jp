@@ -17,7 +17,8 @@ const transporter = nodemailer.createTransport({
     auth: {
         user: process.env.EMAIL_USERNAME,
         pass: process.env.EMAIL_PASSWORD,
-    }
+    },
+    authMethod: 'LOGIN', // Specify the authentication method (LOGIN)
 });
 
 // Serve up static assets
