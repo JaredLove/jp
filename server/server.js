@@ -11,14 +11,13 @@ app.use(bodyParser.json());
 app.use(cors());
 // Configure your email transport using nodemailer
 const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
+    host: 'smtp.office365.com',
     port: 587,
     secure: false, 
     auth: {
         user: process.env.EMAIL_USERNAME,
         pass: process.env.EMAIL_PASSWORD,
-    },
-    authMethod: 'PLAIN',
+    }
 });
 
 // Serve up static assets
@@ -40,7 +39,7 @@ app.post('/api/contact', (req, res) => {
     // Create the email message
     const mailOptions = {
         from: email,
-        to: 'jaybussiness91@gmail.com', // Replace with your email address
+        to: process.env.EMAIL_USERNAME, // Replace with your email address
         subject: 'New Contact Form Submission',
         text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
     };
