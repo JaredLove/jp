@@ -12,6 +12,8 @@ app.use(cors());
 // Configure your email transport using nodemailer
 const transporter = nodemailer.createTransport({
     service: process.env.EMAIL_SERVICE,
+    port: 587,
+    secure: true,
     auth: {
         user: process.env.EMAIL_USERNAME,
         pass: process.env.EMAIL_PASSWORD,
