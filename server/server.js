@@ -22,7 +22,7 @@ const transporter = nodemailer.createTransport({
     tls: {
         ciphers:'SSLv3'
     },
-    authMethod: 'LOGIN', // Specify the authentication method (LOGIN)
+    authMethod: 'LOGIN',
 });
 
 // Serve up static assets
