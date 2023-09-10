@@ -28,7 +28,7 @@ function Work() {
               </div>
               <div className="projectLinks">
                 <a href="https://github.com/JaredLove/shop-shop" target="_blank" rel="noreferrer"> <FontAwesomeIcon icon={faGithub} /></a>
-                <a href="https://shop-shop-jl.herokuapp.com/" target="_blank" rel="noreferrer"> <FontAwesomeIcon icon={faExternalLinkSquare} /></a>
+                <a href="https://shop-shop-jl.herokuapp.com/" target="_blank" rel="noreferrer" > <FontAwesomeIcon icon={faExternalLinkSquare} /></a>
               </div>
             </div>
             <div className="workContent">

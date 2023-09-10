@@ -36,9 +36,9 @@ const Header = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a href="#contact" className="nav-link" onClick={close}>
-            <span className='navSign'></span> Contact
-            </a>
+           <button className="contact-link"><a href="#contact" className="nav-link" onClick={close}>
+            Contact
+            </a></button>
           </li>
         </ul>
       </div>
