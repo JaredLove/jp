@@ -25,8 +25,8 @@ function About() {
    <p>
 
    
-                Currently based in San Antonio, Texas and graduated from the
-                UTSA <span className="gy">Full Stack Web Developer</span> boostcamp in december 2022.
+                Currently based in San Antonio, Texas and graduated from
+                UTSA as a <span className="gy">Full Stack Web Developer</span>.
  
 
    </p>
