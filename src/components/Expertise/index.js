@@ -90,7 +90,7 @@ return (
     </div>
     </div>
     <div>
-    <h1 className='resumeLink'>Take a look at my <a href="https://docs.google.com/document/d/17J7e-47XY25hDmlJsdg8uso_YAwcqxTL8uDUWnMpqb4/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></h1> 
+    <h1 className='resumeLink'>Take a look at my <a href="/" target="_blank" rel="noopener noreferrer">Resume</a></h1> 
     </div>
     </div>
     </div>
