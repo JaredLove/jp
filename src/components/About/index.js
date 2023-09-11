@@ -19,7 +19,7 @@ function About() {
           
                 Hey, I'm Jared, but you can call me <span className="gy">Jay.</span> I started my web
                 development journey in 2021 but I have had an interest in it
-                since 2015 when I took a course in c++ while attending college.
+                since 2018 when I took a course in c++ while attending college.
    
    </p> 
    <p>
