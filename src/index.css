@@ -275,6 +275,8 @@ a {
         align-items: center;
         text-align: left;
         height: 100vh;
+        max-height: 100%;
+        width: 100%;
       }
 
       .home-text {

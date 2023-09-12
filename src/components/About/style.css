@@ -151,6 +151,10 @@
   
   /* About me section css */
   @media screen and (min-width: 50px ) and (max-width: 344px) {
+    .about {
+      width: 100%;
+      height: 100%;
+    }
     .aboutIconsContainer {
       display: flex;
       justify-content: center;
