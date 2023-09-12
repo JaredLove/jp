@@ -8,7 +8,8 @@ function Work() {
 
   return (
     <div className="work">
-<h1 className='workH1'><span className='navSign'>( )</span> My Work</h1>
+        <div className="cover-work"></div>
+<h1 className='workH1'>Work</h1>
    
     
     <div className='images'>

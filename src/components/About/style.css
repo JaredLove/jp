@@ -28,6 +28,15 @@
     max-height: 150vh;
     margin: 100px 0;
   }
+
+  .cover-about {
+    background-color: rgba(255, 215, 0, .8);
+    width: 204px;
+    height: 12px;
+    position: relative;
+    top: 60px;
+  }
+  
   .vert-line {
     border-left: 1px solid black;
     height: 830px;
@@ -112,13 +121,13 @@
   } */
   
   .aboutInfo {
-    color: var(--white);
+    color: var(--CrispWhite);
     font-size: 40px;
     margin: 10px 0 40px;
     display: flex;
     justify-content: center;
   }
-  
+
   .aboutMe p {
     color: var(--CrispWhite);
     width: 50ch;

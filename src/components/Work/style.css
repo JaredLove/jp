@@ -19,7 +19,7 @@
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   width: 350px;
-  height: 350px;
+  height: 370px;
   padding: 0 0 0 0;
   overflow: hidden;
   color: #fff;
@@ -41,6 +41,29 @@
   padding: 10px;
 }
 
+.workContent h3 {
+  font-size: 20px;
+  color: var(--goldenYellow);
+  margin: 0;
+  text-align: left;
+}
+
+.workContent p {
+  font-size: 15px;
+  color: var(--white);
+  margin: 0;
+  text-align: center;
+}
+
+.cover-work{
+  background-color: rgba(255, 215, 0, .8);
+  width: 85px;
+  height: 12px;
+  position: relative;
+  top: 38px;
+}
+  
+
 .workBottom {
   display: flex;
   flex-direction: row;
@@ -50,6 +73,11 @@
   color: #767e85;
   padding: 20px;
 }
+  .workBottom p {
+    color: #767e85;
+    text-align: center;
+    margin: 0 43px;
+  }
 
 .folder {
   font-size: 50px;
@@ -62,7 +90,7 @@
 }
 
 .projectLinks a {
-  color: var(--mint);
+  color: var(--black);
  }
 
 .work {
@@ -89,21 +117,6 @@
       
     }
     
-    .buttons  {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin: 20px;
-    }
-    
-    .image-Container {
-      display: flex;
-    flex-direction: row;
-    padding: 20px;
-    }
-    .image-Container div {
-      padding: 20px;
-    }
     
     .workH1 {
       color: var(--text);
@@ -111,132 +124,6 @@
       align-items: center;
       text-align: center;
     }
-    
-    
-    .watchTitle{
-      box-shadow: 0 10px 30px -15px var(--navy-shadow);
-      transition: var(--transition);
-      height: 50%;
-    
-      padding: 15px;
-      border-radius: 10%;
-      background-color: var(--light-navy);
-      color: var(--light-slate);
-    }
-    
-    .title {
-      color: #fff;
-      font-size: 35px;
-      width: 20ch;
-    
-    }
-    
-    .title2 {
-      color: #fff;
-      font-size: 35px;
-      margin-top: 90px;
-      margin-left: 50px;
-      }
-    
-    
-    
-      .title3 {
-        color: #fff;
-        font-size: 35px;
-        margin-top: 90px;
-        margin-right: 50px;
-      }
-    
-      .span {
-        font-size: 15px;
-    
-      }
-    
-    
-    .watchTime img {
-      transition: transform .5s ease;
-    }
-    
-    
-    .text1 {
-      color: white;
-      font-size: 20px;
-      position: absolute;
-      top: 30%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      text-align: center;
-      text-decoration: none;
-    }
-    .text2 {
-      color: white;
-      font-size: 20px;
-      position: absolute;
-      top: 60%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      text-align: center;
-      text-decoration: none;
-    }
-    
-    .t2w {
-      display: flex;
-      flex-direction: row-reverse;
-    }
-    
-    .b2g {
-      display: flex;
-      flex-direction: row;
-    }
-    
-    
-    .wtImg {
-      width: 400px;
-      height: 300px;
-      border: #000;
-      border-radius: 5%;
-    }
-    
-    .wt {
-    
-        display: flex;
-        flex-direction: row;
-    
-    }
-    
-    .time2Work {
-      position: relative;
-      padding: 20px 0;
-      overflow: hidden;
-    }
-    
-    .bookeeper2Go {
-      position: relative;
-      overflow: hidden;
-      padding: 20px 0;
-    
-    }
-    
-    .workList {
-      list-style-type: none;
-    }
-    
-    .workList li {
-      font-size: 30px;
-    
-    
-    
-    }
-    
-    .bg {
-      background-color: rgba(0, 0, 0, 0.5);
-      width: 100vh;
-    }
-
 
 
     @media screen and (min-width: 50px ) and (max-width: 800px) {

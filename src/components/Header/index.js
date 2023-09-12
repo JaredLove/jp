@@ -12,7 +12,7 @@ const Header = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <a href="#home" className="navbar-brand">
-          JaredL.
+          J.
         </a>
         <button className="navbar-toggler" onClick={toggle}>
           <FaBars />
@@ -37,7 +37,7 @@ const Header = () => {
           </li>
           <li className="nav-item">
            <button className="contact-link"><a href="#contact" className="nav-link" onClick={close}>
-            Contact
+            <span className="ctn">Contact</span>
             </a></button>
           </li>
         </ul>

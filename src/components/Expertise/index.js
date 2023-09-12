@@ -1,14 +1,17 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faImage, faDatabase, faThumbsUp, faCircleCheck} from '@fortawesome/free-solid-svg-icons';
+import { faImage, faDatabase, faThumbsUp, faCircleCheck, faCheck} from '@fortawesome/free-solid-svg-icons';
 import './style.css';
 
 function Resume() {
 
 return (
     <div className='resumeInfo'>
+      
+      <div><h1 className='resumeTitle'>Expertise</h1>
+      <div className="cover-expertise"></div>
+      </div>
 
-<h1 className='resumeTitle'> <span className='navSign'>( )</span> My Expertise</h1>
 
       <div className="expertise-content">
       <ul>
@@ -17,10 +20,10 @@ return (
       <h1>Frontend Developer</h1>
       <span className='icon'><FontAwesomeIcon icon={faImage} /></span>
             <ol>
-              <li>Crafting Engaging Interfaces</li>
-              <li>Code with Creative Vision</li>
-              <li>Responsive Design Expertise</li>
-              <li>User-Centric Frontend Solutions</li>
+              <li><FontAwesomeIcon icon={faCheck} className="fai" />Crafting Engaging Interfaces</li>
+              <li><FontAwesomeIcon icon={faCheck} className="fai" />Code with Creative Vision</li>
+              <li><FontAwesomeIcon icon={faCheck} className="fai" />Responsive Design Expertise</li>
+              <li><FontAwesomeIcon icon={faCheck} className="fai" />User-Centric Frontend Solutions</li>
             </ol>
       </div>
 
@@ -36,10 +39,10 @@ return (
       <h1>Backend Developer</h1> 
       <span className='icon'><FontAwesomeIcon icon={faDatabase} /></span>
       <ol>
-              <li>Powering Apps Efficiently</li>
-              <li>Database Management</li>
-              <li>Security and Reliability Focus</li>
-              <li>Server-Side Logic</li>
+              <li><FontAwesomeIcon icon={faCheck} className="fai" />Powering Apps Efficiently</li>
+              <li><FontAwesomeIcon icon={faCheck} className="fai" />Database Management</li>
+              <li><FontAwesomeIcon icon={faCheck} className="fai" />Security and Reliability Focus</li>
+              <li><FontAwesomeIcon icon={faCheck} className="fai" />Server-Side Logic</li>
       </ol>
 
       </div>
@@ -52,10 +55,13 @@ return (
       <h1>Value</h1>  
       <span className='icon'><FontAwesomeIcon icon={faThumbsUp} /></span>
       <ol>
-              <li>Full-Stack Versatility</li>
-              <li>Passionate Problem Solver</li>
-              <li>Collaborative Partner</li>
-              <li>Technical Solutions for Success</li>
+              <li>
+                <FontAwesomeIcon icon={faCheck} className="fai" />
+               Full Stack Versatility
+              </li>
+              <li><FontAwesomeIcon icon={faCheck} className="fai" />Passionate Problem Solver</li>
+              <li><FontAwesomeIcon icon={faCheck} className="fai" />Collaborative Partner</li>
+              <li><FontAwesomeIcon icon={faCheck} className="fai" />Technical Solutions for Success</li>
       </ol>
 
       </div>

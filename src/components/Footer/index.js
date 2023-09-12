@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub ,  faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import "./style.css";
 
 function Footer() {
@@ -13,8 +15,23 @@ function Footer() {
             to get back to you.
             </p>
             <div className="btnWrapper">
-            <a href = "mailto: abc@example.com"><button className="contactBtn">Send Email</button></a>
+            <a href = "mailto: lovejared91@yahoo.com"><button className="contactBtn">Send Email</button></a>
             </div>
+            </div>
+            <div className="footer-links">
+                <h2>Check me out <span className="gy">here:</span> </h2>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/jared-love-188479241/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a> 
+                    </li>           
+                    <li>
+                        <a href="https://github.com/JaredLove" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+                    </li> 
+                    
+
+                </ul>
+            
+
             </div>
 
         </div>

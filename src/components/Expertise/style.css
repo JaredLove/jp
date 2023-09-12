@@ -28,6 +28,14 @@
     margin-top: 250px;
     
   }
+
+.cover-expertise{
+  background-color: rgba(255, 215, 0, .8);
+  width: 145px;
+  height: 12px;
+  position: relative;
+  bottom: 15px;
+}
   
   .resumeTitle {
     font-size: 30px;
@@ -94,7 +102,6 @@
 
 .techList ul {
 display: grid;
-
 }
 
 .techList ul li {
@@ -104,6 +111,7 @@ display: grid;
     margin: 5px 0;
     color: var(--textp);
 }
+
 
 
 
@@ -130,7 +138,12 @@ display: grid;
 }
 
 .mint {
-  color: var(--mint);
+  color: var(--goldenYellow);
+}
+
+.fai {
+  margin-right: 10px;
+  
 }
 
 
@@ -172,13 +185,9 @@ display: grid;
       margin: 50px;
 
   }
-
-  .techListContent {
-    
-  }
-
   .techList ul {
     display: grid;
+
     
     }
 

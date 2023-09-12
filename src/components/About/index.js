@@ -10,7 +10,8 @@ function About() {
 
     return (
         <div className='about'>
-          <h1 className='aboutInfo'><span className='navSign'></span>  About Me </h1>  
+          <div className='cover-about'></div>
+          <h1 className='aboutInfo'>About Me</h1>
       <div className='aboutContent'>
         <div><img className="aboutImg" src={coffee} alt='code'></img></div>
       <div className='aboutMe'>

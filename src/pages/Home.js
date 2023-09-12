@@ -68,7 +68,9 @@ const  Home = () => {
         <div className='home-text'>
         <div className='home-text-name'>
         <div className='h2n'>
+          <div className='cover'></div>
         <h1>Jared Love.</h1>
+        
         </div>
         <div className='line'></div>     
         <div className='icons'> 
@@ -78,7 +80,7 @@ const  Home = () => {
       <a href='https://www.linkedin.com/in/jared-love-188479241/' target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faLinkedin} /></a>
 
     </div>
-    <div className='quote'> <p>"Simplicity is the ultimate sophistication." - Leonardo da Vinci</p></div>
+    <div className='quote'> <p>"Simplicity is the ultimate sophistication." - <span className='quote-name'>Leonardo da Vinci</span></p></div>
         </div>
         <div className='home-text-content'>
         <h3>I design and build <span className='design'>digital experiences.</span></h3>  
@@ -92,12 +94,12 @@ const  Home = () => {
     
     </div>  
  
-    <div className='about' id='about'   style={{
+    <section className='about' id='about'   style={{
           opacity: isVisible.div1 ? 1 : 0,
           transition: 'opacity 1s ease-in-out',
         }}    >
           <About />
-      </div>
+      </section>
 
       
 
