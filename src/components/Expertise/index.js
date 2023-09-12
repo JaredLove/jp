@@ -68,7 +68,7 @@ return (
       </li>
       </ul>
       </div>
-<div>
+<div className="tech-list-container">
   <div className="tech-title"><h2>Here are some technologies I’ve been working with recently:</h2></div>
 
     <div className='techList'>

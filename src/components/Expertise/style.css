@@ -146,8 +146,95 @@ display: grid;
 
 }
 
+@media screen and (min-width: 50px ) and (max-width: 344px) {
+  
+  
+  .resumeInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    max-height: 300vh;
+    margin-top: 250px;
+    
+  }
 
-@media screen and (min-width: 50px ) and (max-width: 800px) {
+  .expertise-content {
+    white-space: normal;
+  }
+
+
+  .resumeInfo ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    margin: 30px 0;
+  
+  }
+
+  .resumeInfo ul li {
+    margin: 10px 0;
+  }
+
+  .techList {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+
+}
+.techList ul {
+  display: grid;
+
+  
+  }
+
+  .techList ul li {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: 5px 0;
+    color: var(--textp);
+    font-size: 13px;
+}
+
+.tech-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tech-list-container {
+  width: 100%;
+}
+
+.tech-title h2 {
+
+  width: 30ch;
+  font-size: 12px;
+  color: var(--CrispWhite);
+}
+
+.frontEnd h1 {
+  font-size: 25px;
+}
+
+.backEnd h1 {
+  font-size: 25px;
+}
+
+.value h1 {
+  font-size: 25px;
+}
+}
+
+@media screen and (min-width: 345px ) and (max-width: 800px) {
     .resumeInfo {
       display: flex;
       justify-content: center;
