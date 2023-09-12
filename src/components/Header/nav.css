@@ -1,4 +1,6 @@
 
+
+
 .navbar {
   /* background-color: rgba(0, 0, 0, 0.7); */
   /* background-color:  #2c3e50 ; */
@@ -7,8 +9,9 @@
   justify-content: center;
   align-items: center;
   height: 50px;
-
   /* background-color: #181520; */
+  position: relative;
+  top: 10px;
 
 }
 
@@ -40,9 +43,9 @@
   font-size: 1.5rem;
   text-decoration: none;
 }
-
-.navSign{ 
-  color: #ffffff;
+.navbar-brand:hover {
+  color: var(--goldenYellow);
+  text-decoration: none;
 }
 
 .navbar-toggler {
@@ -53,15 +56,19 @@
   display: none;
   font-size: 1.5rem;
 }
-.navbar-container ul li a {
+.navbar-container ul li button {
   display: inline-block;
   position: relative;
   padding: 0 0 5px; /* Add padding to create space for the underline */
   color: #ffffff; /* Text color */
   text-decoration: none; /* Remove default underline */
   transition: padding 0.3s; /* Smooth padding transition on hover */
+  scroll-behavior: smooth;
+  border: none;
+  background: none;
+  font-size: 17px;
 }
-.navbar-container ul li a::before {
+.navbar-container ul li button::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -72,19 +79,19 @@
   transition: background-color 1s; /* Smooth color transition on hover */
 }
 
-.navbar-container ul li a:hover {
+.navbar-container ul li button:hover {
   display: inline-block;
   position: relative;
-  color: #ffffff; /* Text color */
+  color: #000000; /* Text color */
   text-decoration: none; /* Remove default underline */
 }
 
-.navbar-container ul li a:hover::before {
+.navbar-container ul li button:hover::before {
   background-color: rgba(255, 255, 0, 0.7); /* Yellow RGBA underline color on hover */
 }
-  .contact-link {
+  .contact-link{
     background-color: #000000;
-    color: #ffffff;
+    color: var(--goldenYellow);
     border: none;
     border-radius: 5px;
     padding: 5px 20px;
@@ -108,13 +115,20 @@
   .navbar-nav {
     display: none;
   }
-}
+
+
+
 
 .navbar-open {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(19, 18, 18);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   position: absolute;
   top: 60px;
   right: 0;
@@ -122,4 +136,15 @@
   z-index: 1;
   transform: translateY(0);
   transition: all 0.3s ease-in-out;
+  height: 100vh;
+  text-align: center;
+}
+
+.navbar-container ul li {
+  margin: 30px 0;
+}
+
+
+
+
 }

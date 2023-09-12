@@ -109,7 +109,7 @@ footer h2 {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        height: 500px;
+        height: 700px;
         margin-top: 200px;
     }
     footer h2 {
@@ -132,10 +132,10 @@ footer h2 {
     color: #000000;
     border: none;
     border-radius: 5px;
-    padding: 10px 109px;
+    padding: 5px 5px;
     font-size: 1.5rem;
     font-weight: 400;
-    margin-top: 50px;
+    margin: 20px 0;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     }
@@ -149,6 +149,37 @@ footer h2 {
         text-align: center;
         margin: 0;
         width: 90%;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+    }
+    
+    .footer-links h2 {
+        color: #fff;
+        font-size: 2.2rem;
+        font-weight: 400;
+        position: static;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .footer-links ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        text-align: center;
+        margin: 0;
+    }
+    .footer-links ul li {
+        list-style: none;
+        margin: 0 10px;
     }
 }
  

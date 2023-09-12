@@ -7,6 +7,19 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   const close = () => setIsOpen(false);
+
+  const scrollToSection = (sectionId) => {
+    
+    const section = document.getElementById(sectionId);
+    if (section) {
+      
+      section.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+    close();
+  };
+
   return (
     <header className="header">
     <nav className="navbar">
@@ -21,24 +34,16 @@ const Header = () => {
           className={`navbar-nav ${isOpen ? "navbar-open" : "navbar-closed"}`}
         >
           <li className="nav-item">
-            <a href="#about" className="nav-link" onClick={close}>
-            <span className='navSign'></span> About
-            </a>
+          <button onClick={() => scrollToSection('about')} handleClick={close}>About</button>
           </li>
           <li className="nav-item">
-            <a href="#resume" className="nav-link" onClick={close}>
-            <span className='navSign'></span> Expertise
-            </a>
+          <button onClick={() => scrollToSection('resume')} handleClick={close}>Expertise</button>
           </li>
           <li className="nav-item">
-            <a href="#work" className="nav-link" onClick={close}>
-            <span className='navSign'></span> Work
-            </a>
+          <button onClick={() => scrollToSection('work')} handleClick={close}>Work</button>
           </li>
           <li className="nav-item">
-           <button className="contact-link"><a href="#contact" className="nav-link" onClick={close}>
-            <span className="ctn">Contact</span>
-            </a></button>
+          <button onClick={() => scrollToSection('contact')} handleClick={close}><span className="contact-link">Contact</span></button>
           </li>
         </ul>
       </div>

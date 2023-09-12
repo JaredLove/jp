@@ -103,26 +103,28 @@ const  Home = () => {
 
       
 
-      <div className='resumeInfo' id='resume'     style={{
+      <section className='resumeInfo' id='resume'     style={{
           opacity: isVisible.div2 ? 1 : 0,
           transition: 'opacity 1s ease-in-out',
         }}>
           <Resume />
-      </div>
-<div className='work' id='work' style={{
-          opacity: isVisible.div3 ? 1 : 0,
-          transition: 'opacity 1s ease-in-out',
-        }}>
-          <Work />
-</div>
+      </section>
+
+
+      <section className='work' id='work' style={{
+                opacity: isVisible.div3 ? 1 : 0,
+                transition: 'opacity 1s ease-in-out',
+              }}>
+                <Work />
+      </section>
 
  
-    <div id='contact' className='contactSection' style={{
+    <section id='contact' className='contactSection' style={{
           opacity: isVisible.div4 ? 1 : 0,
           transition: 'opacity 1s ease-in-out',
         }}>
            <Footer/>
-</div>
+    </section>
 </main>
 
   );
