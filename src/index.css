@@ -257,11 +257,99 @@ a {
 
  /* Home section css end */
 
+ @media screen and (min-width: 50px ) and (max-width: 344px) {
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+  }
+
+  .home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 0 0 150px 0;
+   }
+
+
+  .home-text-name {
+    margin: 0;
+   }
+
+   .home-text-content {
+    margin: 0;
+   }
+
+   .h2n {
+    display: none;
+   }
+
+   .line {
+    display: none;
+   }
+   .home-content h1 {
+    font-size: 25px;
+    color: var(--text);
+  }
+  .home-content h2 {
+    font-size: 25px;
+    color: var(--textp);
+   
+  }
+  .home-content h3 {
+    font-size: 20px;
+    width: 20ch;
+    color: var(--white);
+  }
+
+  .home-content p {
+    font-size: 12px;
+    color: #777777;
+    width: 38ch;
+    margin: 10px 0;
+   }
+   .icons {
+    text-align: center;
+   }
+   .icons a {
+    font-size: 25px;
+    transition: var(--transition);
+    color: var(--goldenYellow);
+    margin-right: 20px;
+
+  }
+  .icons a:hover {
+    color: #777777;
+  }
+
+  .quote {
+    position: relative;
+    top: 0;
+    width: 99%;
+  }
+
+  .learn-more  {
+    color: var(--goldenYellow);
+    background-color: var(--black);
+    border: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 5px;
+    transition: var(--transition);
+  }
+ }
 
 
 
-
-   @media screen and (min-width: 50px ) and (max-width: 800px) {
+   @media screen and (min-width: 345px ) and (max-width: 800px) {
     * {
       box-sizing: border-box;
       margin: 0;
@@ -274,7 +362,7 @@ a {
         justify-content: center;
         align-items: center;
         text-align: left;
-        height: 100vh;
+        height: 100%;
         max-height: 100%;
         width: 100%;
       }
