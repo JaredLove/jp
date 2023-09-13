@@ -160,13 +160,13 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      width: 70%;
+      width: 100%;
       margin: 0;
       padding: 0;
     }
 
     .about-text {
-      width: 70%;
+      width: 100%;
       margin: 0;
       padding: 0;
     }
@@ -174,14 +174,14 @@
     .aboutIconsContent{
       display: grid;
       grid-template-columns: 1fr 1fr;
-      margin: 60px 0;
-      width: 70%;
+      margin: 40px 0;
+      width: 100%;
       
     }
     .aboutIcons {
         font-size: 15px;
-        width: 70%;
-        margin: 0;
+        width: 100%;
+        margin: 20px 0;
         background: none;
         box-shadow: none;
         padding: 0;
@@ -192,11 +192,11 @@
 
     .aboutIcons h1 {
       display: inline;
-      font-size: 15px;
+      font-size: 12px;
 
       font-weight: bold;
       color: var(--secondary);
-      margin: 0 50px;
+      margin: 0;
     }
 
     .aboutIcons p {
@@ -215,8 +215,8 @@
 
   .aboutMe p {
     color: var(--white);
-    width: 50ch;
-    font-size: 10px;
+    width: 40ch;
+    font-size: 12px;
     margin: 0 0 15px;
   }
 
@@ -249,13 +249,13 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      width: 70%;
+      width: 100%;
       margin: 0;
       padding: 0;
     }
 
     .about-text {
-      width: 70%;
+      width: 100%;
       margin: 0;
       padding: 0;
     }
@@ -264,13 +264,13 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       margin: 60px 0;
-      width: 70%;
+      width: 100%;
       
     }
     .aboutIcons {
         font-size: 15px;
-        width: 70%;
-        margin: 0;
+        width: 100%;
+        margin: 10px 0;
         background: none;
         box-shadow: none;
         padding: 0;
@@ -281,12 +281,13 @@
 
     .aboutIcons h1 {
       display: inline;
-      font-size: 15px;
+      font-size: 12px;
 
       font-weight: bold;
       color: var(--secondary);
-      margin: 0 50px;
+      margin: 0;
     }
+
 
     .aboutIcons p {
       display: none;
@@ -304,7 +305,7 @@
 
   .aboutMe p {
     color: var(--white);
-    width: 50ch;
+    width: 40ch;
     font-size: 12px;
     margin: 0 0 15px;
   }

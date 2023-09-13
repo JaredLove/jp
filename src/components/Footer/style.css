@@ -113,7 +113,7 @@ footer h2 {
     }
     footer h2 {
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-weight: 400;
         text-align: center;
     }
@@ -193,13 +193,14 @@ footer h2 {
     }
     footer h2 {
         color: #fff;
-        font-size: 2.2rem;
+        font-size: 1.4rem;
         font-weight: 400;
+        text-align: center;
     }
 
     footer p {
         color: #fff;
-        font-size: 1rem;
+        font-size: .8rem;
         font-weight: 400;
         width: 40ch;
         margin-top: 50px;
@@ -227,7 +228,7 @@ footer h2 {
         align-items: center;
         text-align: center;
         margin: 0;
-        width: 90%;
+        width: 100%;
     }
 
     .footer-links {
@@ -240,7 +241,7 @@ footer h2 {
     
     .footer-links h2 {
         color: #fff;
-        font-size: 2.2rem;
+        font-size: 1.4rem;
         font-weight: 400;
         position: static;
         text-align: center;
@@ -258,6 +259,10 @@ footer h2 {
     }
     .footer-links ul li {
         list-style: none;
+        margin: 0 10px;
+    }
+    .footer-links ul li a {
+        font-size: 50px;
         margin: 0 10px;
     }
 }
