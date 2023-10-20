@@ -46,7 +46,7 @@
   .me {
     width: 500px;
     height: 500px;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--black);
     border-radius: 100%;
   }
   

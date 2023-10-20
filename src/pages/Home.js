@@ -47,7 +47,6 @@ const  Home = () => {
             animationData={require('../assets/json/animation_lnwy83t6.json')}
             loop
             autoplay
-            style={{ width: '50px', height: '50px' }}
           />
         </div>
       </div>
