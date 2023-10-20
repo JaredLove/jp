@@ -1,43 +1,36 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub ,  faLinkedin} from '@fortawesome/free-brands-svg-icons';
-import "./style.css";
+import "./style.css"
+import FontAwesome from "react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 
 function Footer() {
-    return (
+  return (
     <footer>
-
-        <div className="workTogether">
-            <div>
-            <h2>Lets work <span className="gy">together?</span></h2>      
-            <p>I'm always looking for new opportunities, whether you have a job for me
-            or just want to say hello, my inbox is just a click away. I'll try my best
-            to get back to you.
-            </p>
-            <div className="btnWrapper">
-            <a href = "mailto: lovejared91@yahoo.com"><button className="contactBtn">Send Email</button></a>
-            </div>
-            </div>
-            <div className="footer-links">
-                <h2>Check me out <span className="gy">here:</span> </h2>
-                <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/jared-love-188479241/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a> 
-                    </li>           
-                    <li>
-                        <a href="https://github.com/JaredLove" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
-                    </li> 
-                    
-
-                </ul>
-            
-
-            </div>
-
-        </div>
-
+        <section className="connect">
+          <h2>Wanna get a coffee and chat? You can find me in these places to get in touch.</h2>
+          <ul className="social">
+            <li>
+              <a href="https://www.linkedin.com/in/jared-love-188479241/" target="_blank" rel="noreferrer" className="btn">
+              Linkedin
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/JaredLove" target="_blank" rel="noreferrer" className="btn">
+                Github
+              </a>
+            </li>
+            <li>
+              <a href="mailto:lovejared91@Yahoo.com" target="_blank" rel="noreferrer" className="btn">
+                Email
+              </a>
+            </li>
+            </ul>
+        </section>
     </footer>
-    );
-    }
+  );
+}
 
 export default Footer;

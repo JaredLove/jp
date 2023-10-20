@@ -1,504 +1,295 @@
 /* About me section css */
-
-:root {
-  --primary:  #323333;
-  --secondary: #C0C0C0;
-  --teal: #37B6BD;
-  --text: #ffffff;
-  --textp: #AAB7B8;
-  --white: #FFF;
-  --black: #000;
-  --light-black: #1f1e1e;
-  --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-  --mint: #6AC9A8;
-  --CrispWhite: #FFFFFF;
-  --goldenYellow: #FFD700;
-  --slateBlue: #6A5ACD;  
-  --lightSlateBlue: #a094f3;
-  --lightCharcoal: #777777;
-}
-
+/* font-family: Open Sauce,arial; */
 .about {
-   display: flex;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100%;
-    max-height: 150vh;
-    margin: 100px 0;
-  }
-
-  .cover-about {
-    background-color: rgba(255, 215, 0, .8);
-    width: 204px;
-    height: 12px;
-    position: relative;
-    top: 60px;
-  }
-  
-  .vert-line {
-    border-left: 1px solid black;
-    height: 830px;
-    margin: 0 20px;
-  }
-  .aboutContent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-
-  }
-  .about-text {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .aboutIconsContainer {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-direction: row;
-    text-align: center;
-  }
-  
-  .aboutIconsContent{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin: 10px 0;
-  }
-  
-  .aboutIcons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
-    text-align: center;
-    font-size: 30px;
-    color: var(--goldenYellow);
-    background: rgba(142, 138, 138, 0.26);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 20px;
-    margin: 10px 20px;
-  }
-
-
-  .aboutIcons h1 {
-    font-size: 15px;
-    font-weight: bold;
-    color: var(--CrispWhite);
-    margin: 0 50px;
-  }
-  
-  .aboutIcons p {
-    font-size: 13px;
-    width: 40ch;
-    text-align: center;
-    color: var(--CrispWhite);
-  
-  }
-  
-  
-  .aboutImg {
-    width: 500px;
-    height: 500px;
-    border-radius: 10%;
-    margin-right: 50px;
-    margin-top: 20px;
-  }
-  
-  /* .aboutBorder {
-    background-color: var(--secondary);
-    width: 100%;
-  } */
-  
-  .aboutInfo {
-    color: var(--CrispWhite);
-    font-size: 40px;
-    margin: 10px 0 40px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .aboutMe p {
-    color: var(--CrispWhite);
-    width: 50ch;
-    font-size: 20px;
-    margin: 0 0 15px;
-  }
-  .aboutMe h1 {
-    font-size: 30px;
-    
-  }
-  
-  .me {
-    width: 200px;
-    height: 200px;
+    height: 100vh;
+    padding-top: 250px;
   }
 
   .gy {
-    color: var(--goldenYellow);
+    color: var(--darkSkyBlue);
   }
-  
+
+  .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+
+  .about h2 { 
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 8rem;
+    color: var(--secondary);
+  }
+
+  .color-change-paragraph {
+    max-height: 100%;
+    font-family: Avant Garde,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--secondary);
+    width: 40ch;
+    font-size: 2.2rem;
+    letter-spacing: -.025em;
+    line-height: 1.1;
+    margin-right: 100px;
+  }
+
+
+
+  .me {
+    width: 500px;
+    height: 500px;
+    border: 1px solid var(--primary);
+    border-radius: 100%;
+  }
   
   /* About me section css */
-  @media screen and (min-width: 50px ) and (max-width: 344px) {
+  @media screen and (min-width: 50px ) and (max-width: 499px) {
     .about {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       width: 100%;
       height: 100%;
+      max-height: 100%;
+      padding-top: 20px;
     }
-    .aboutIconsContainer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-    .about-text {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-    .aboutIconsContent{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin: 40px 0;
-      width: 100%;
-      
-    }
-    .aboutIcons {
-        font-size: 15px;
-        width: 100%;
-        margin: 20px 0;
-        background: none;
-        box-shadow: none;
-        padding: 0;
-        backdrop-filter: none;
-        -webkit-backdrop-filter: none;
-        border: none;
-    }
-
-    .aboutIcons h1 {
-      display: inline;
-      font-size: 12px;
-
-      font-weight: bold;
-      color: var(--secondary);
-      margin: 0;
-    }
-
-    .aboutIcons p {
-      display: none;
-    
-    }
-
-      
-  .aboutInfo {
-    color: var(--white);
-    font-size: 25px;
-    margin: 10px 0 40px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .aboutMe p {
-    color: var(--white);
-    width: 40ch;
-    font-size: 12px;
-    margin: 0 0 15px;
-  }
-
-  .aboutImg {
-    width: 150px;
-    height: 150px;
-    border-radius: 10%;
-    margin-right: 0px;
-  }
-
-  .aboutContent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-  }
-  .cover-about {
-    background-color: rgba(255, 215, 0, .8);
-    width: 135px;
-    height: 12px;
-    position: relative;
-    top: 45px;
-  }
-  }
-
-  @media screen and (min-width: 345px ) and (max-width: 800px) {
-    .aboutIconsContainer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-    .about-text {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-    .aboutIconsContent{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin: 60px 0;
-      width: 100%;
-      
-    }
-    .aboutIcons {
-        font-size: 15px;
-        width: 100%;
-        margin: 10px 0;
-        background: none;
-        box-shadow: none;
-        padding: 0;
-        backdrop-filter: none;
-        -webkit-backdrop-filter: none;
-        border: none;
-    }
-
-    .aboutIcons h1 {
-      display: inline;
-      font-size: 12px;
-
-      font-weight: bold;
-      color: var(--secondary);
-      margin: 0;
-    }
-
-
-    .aboutIcons p {
-      display: none;
-    
-    }
-
-      
-  .aboutInfo {
-    color: var(--white);
-    font-size: 25px;
-    margin: 10px 0 40px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .aboutMe p {
-    color: var(--white);
-    width: 40ch;
-    font-size: 12px;
-    margin: 0 0 15px;
-  }
-
-  .aboutImg {
-    width: 150px;
-    height: 150px;
-    border-radius: 10%;
-    margin-right: 0px;
-  }
-
-  .aboutContent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-  }
-  .cover-about {
-    background-color: rgba(255, 215, 0, .8);
-    width: 135px;
-    height: 12px;
-    position: relative;
-    top: 45px;
-  }
   
+    .gy {
+      color: var(--goldenYellow);
+    }
+
+    .about-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-right: 0px;
+      padding-top: 0px;
+      height: 100%;
+      width: 100%;
+    }
+  
+    .about-img {
+      padding: 0;
+    }
+  
+    .about h4 {
+      font-size: 30px;
+      color: var(--textp);
+    }
+    .about-content p {
+      color: var(--textp);
+      width: 35ch;
+      font-family: Avant Garde,sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: .8rem;
+      letter-spacing: -.025em;
+      line-height: 1.1;
+      margin: 0;
+      padding-top: 10px;
+    }
+  
+    .about-content-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
+  }
+
+  @media screen and (min-width: 500px ) and (max-width: 800px) {
+    .about {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      max-height: 100%;
+      padding-top: 20px;
+    }
+  
+    .gy {
+      color: var(--goldenYellow);
+    }
+
+    .about-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-right: 0px;
+      padding-top: 0px;
+      height: 100%;
+      width: 100%;
+    }
+  
+    .about-img {
+      padding: 0;
+    }
+  
+    .about h4 {
+      font-size: 40px;
+      color: var(--textp);
+    }
+    .about-content p {
+      color: var(--textp);
+      width: 35ch;
+      font-family: Avant Garde,sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.2rem;
+      letter-spacing: -.025em;
+      line-height: 1.1;
+      margin: 0;
+      padding-top: 10px;
+    }
+  
+    .about-content-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
+
   }
 
   
   @media screen and (min-width: 801px) and (max-width: 1000px) {
 
-    .aboutIconsContainer {
+    .about {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      max-height: 100%;
+      padding-top: 20px;
+    }
+  
+    .gy {
+      color: var(--goldenYellow);
+    }
+
+    .about-content {
       display: flex;
       justify-content: center;
       align-items: center;
-      text-align: center;
-      width: 70%;
-      margin: 0;
-      padding: 0;
-    }
-
-    .about-text {
-      width: 70%;
-      margin: 0;
-      padding: 0;
-    }
-
-    .aboutIconsContent{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin: 60px 0;
+      flex-direction: column;
+      padding-right: 0px;
+      padding-top: 0px;
+      height: 100%;
       width: 100%;
-      
     }
-    .aboutIcons {
-        font-size: 15px;
-        width: 70%;
-        margin: 0;
-        background: none;
-        box-shadow: none;
-        padding: 0;
-        backdrop-filter: none;
-        -webkit-backdrop-filter: none;
-        border: none;
+  
+    .about-img {
+      padding: 0;
     }
-
-    .aboutIcons h1 {
-      display: inline;
-      font-size: 15px;
-
-      font-weight: bold;
-      color: var(--secondary);
-      margin: 0 50px;
+  
+    .about h4 {
+      font-size: 40px;
+      color: var(--textp);
     }
-
-    .aboutIcons p {
-      display: none;
-    
+    .about-content p {
+      color: var(--textp);
+      width: 35ch;
+      font-family: Avant Garde,sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.6rem;
+      letter-spacing: -.025em;
+      line-height: 1.1;
+      margin: 0;
+      padding-top: 10px;
     }
-
-      
-  .aboutInfo {
-    color: var(--white);
-    font-size: 25px;
-    margin: 10px 0 40px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .aboutMe p {
-    color: var(--white);
-    width: 50ch;
-    font-size: 12px;
-    margin: 0 0 15px;
-  }
-
-  .aboutImg {
-    width: 150px;
-    height: 150px;
-    border-radius: 10%;
-    margin-right: 0px;
-  }
-
-  .aboutContent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-  }
+  
+    .about-content-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+  
   
   }
 
   @media screen and (min-width: 1001px) and (max-width: 1482px) {
 
-    .aboutIconsContainer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      width: 70%;
-      margin: 0;
-      padding: 0;
-    }
-
-    .about-text {
-      width: 70%;
-      margin: 0;
-      padding: 0;
-    }
-
-    .aboutIconsContent{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin: 60px 0;
-      width: 70%;
-      
-    }
-    .aboutIcons {
-        font-size: 15px;
-        width: 70%;
-        margin: 0;
-        background: none;
-        box-shadow: none;
-        padding: 0;
-        backdrop-filter: none;
-        -webkit-backdrop-filter: none;
-        border: none;
-    }
-
-    .aboutIcons h1 {
-      display: inline;
-      font-size: 15px;
-
-      font-weight: bold;
-      color: var(--secondary);
-      margin: 0 50px;
-    }
-
-    .aboutIcons p {
-      display: none;
+      .about {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        padding-top: 20px;
+      }
     
-    }
+      .gy {
+        color: var(--goldenYellow);
+      }
+  
+      .about-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 0px;
+        padding-top: 0px;
+        height: 100%;
+        width: 100%;
+      }
+    
+      .about-img {
+        padding: 0;
+      }
+    
+      .about h4 {
+        font-size: 40px;
+        color: var(--textp);
+      }
+      .about-content p {
+        color: var(--textp);
+        width: 35ch;
+        font-family: Avant Garde,sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.6rem;
+        letter-spacing: -.025em;
+        line-height: 1.1;
+        margin: 0;
+        padding-top: 10px;
+      }
+    
+      .about-content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+      }
+  
 
-      
-  .aboutInfo {
-    color: var(--white);
-    font-size: 25px;
-    margin: 10px 0 40px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .aboutMe p {
-    color: var(--white);
-    width: 50ch;
-    font-size: 12px;
-    margin: 0 0 15px;
-  }
-
-  .aboutImg {
-    width: 150px;
-    height: 150px;
-    border-radius: 10%;
-    margin-right: 0px;
-  }
-
-  .aboutContent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-  }
   
   }

@@ -1,0 +1,21 @@
+.cursor {
+    width: 30px; /* Adjust the size of the cursor */
+    height: 30px; /* Adjust the size of the cursor */
+    border: 2px solid white; /* White circular border */
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9999;
+    mix-blend-mode: difference; /* Makes the cursor visible over different backgrounds */
+    pointer-events: none;
+    transform-origin: center;
+  }
+
+
+
+
+
+  @media screen and (max-width: 1550px) {
+    .cursor {
+      display: none;
+    }
+  }

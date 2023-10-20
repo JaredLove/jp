@@ -1,131 +1,58 @@
-import React, { useEffect, useState } from 'react';
-import Work from '../components/Work';
-import Resume from '../components/Expertise';
-import About from '../components/About';
-import Footer from '../components/Footer';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub ,  faLinkedin} from '@fortawesome/free-brands-svg-icons';
-import { faMailBulk} from '@fortawesome/free-solid-svg-icons';
-  
-  
-
-
+import React, {useState} from 'react';
+import Lottie from 'lottie-react';
 const  Home = () => { 
+  const [isOpen, setIsOpen] = useState(false);
 
-  const [isVisible, setIsVisible] = useState({
-    div1: false,
-    div2: false,
-    div3: false,
-  });
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const div1 = document.getElementById('about');
-      const div2 = document.getElementById('resume');
-      const div3 = document.getElementById('work');
-      const div4 = document.getElementById('contact');
+  const handleClose = () => {
+    setIsOpen(false);
+  };
 
-      if (div1) {
-        const boundingRect1 = div1.getBoundingClientRect();
-        if (boundingRect1.top < window.innerHeight) {
-          setIsVisible((prevState) => ({ ...prevState, div1: true }));
-        }
-      }
+const handleClick = () => {
+  console.log('clicked');
+}
 
-      if (div2) {
-        const boundingRect2 = div2.getBoundingClientRect();
-        if (boundingRect2.top < window.innerHeight) {
-          setIsVisible((prevState) => ({ ...prevState, div2: true }));
-        }
-      }
 
-      if (div3) {
-        const boundingRect3 = div3.getBoundingClientRect();
-        if (boundingRect3.top < window.innerHeight) {
-          setIsVisible((prevState) => ({ ...prevState, div3: true }));
-        }
-      }
-      if (div4) {
-        const boundingRect3 = div4.getBoundingClientRect();
-        if (boundingRect3.top < window.innerHeight) {
-          setIsVisible((prevState) => ({ ...prevState, div4: true }));
-        }
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
-    <main>
-      
-    <div className='home-container'>
-      <div className='home-content'>
-        <div className='home-text'>
-        <div className='home-text-name'>
-        <div className='h2n'>
-          <div className='cover'></div>
-        <h1>Jared Love.</h1>
+
+
+
+    <section className="home-section-container">
+      <div className='full-stack-container'>
+        <div className='full-stack'>
+          <h2><span className='hover-header'>F</span><span className='hover-header'>U</span><span className='hover-header'>L</span><span className='hover-header'>L</span></h2>
+          <h2 id='tags' className='hover-header'>----</h2>
+          <h2><span className='hover-header'>S</span><span className='hover-header'>T</span><span className='hover-header'>A</span><span className='hover-header'>C</span><span className='hover-header'>K</span></h2>
+        </div>
+      </div>
+      <div className='web-dev-container'>
+        <div className='web-dev'>
+          <h2><span className='hover-header'>D</span><span className='hover-header'>E</span><span className='hover-header'>V</span><span className='hover-header'>E</span><span className='hover-header'>L</span><span className='hover-header'>O</span><span className='hover-header'>P</span><span className='hover-header'>E</span><span className='hover-header'>R</span></h2>
         
-        </div>
-        <div className='line'></div>     
-        <div className='icons'> 
-       
-      <a href='#contact' > <FontAwesomeIcon icon={faMailBulk} /></a>
-      <a href='https://github.com/JaredLove' target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faGithub} /></a>
-      <a href='https://www.linkedin.com/in/jared-love-188479241/' target="_blank" rel="noopener noreferrer"> <FontAwesomeIcon icon={faLinkedin} /></a>
+          <div className='web-dev-p'>
+                      <h3>Jared Love</h3>
+          <p>Turning ideas into code, one project at a time. Where innovation meets design.</p>
+          </div>
 
-    </div>
-    <div className='quote'> <p>"Simplicity is the ultimate sophistication." - <span className='quote-name'>Leonardo da Vinci</span></p></div>
         </div>
-        <div className='home-text-content'>
-        <h3>I design and build <span className='design'>digital experiences.</span></h3>  
-        <p>I'm a web developer and I have a passion for creating and designing both functional and visually appealing websites and applications. I'm a team player and I'm always looking to learn new skills and <span className='lp'>technologies</span>. </p>
-        <button className='learn-more'><a href="#about" >Learn More </a></button>
+      </div>
+
+      <div className='lottie-container'>
+        <div className='lottie'>
+          <Lottie
+            animationData={require('../assets/json/animation_lnwy83t6.json')}
+            loop
+            autoplay
+            style={{ width: '50px', height: '50px' }}
+          />
         </div>
-
-    </div>
-  </div>
-
-    
-    </div>  
- 
-    <section className='about' id='about'   style={{
-          opacity: isVisible.div1 ? 1 : 0,
-          transition: 'opacity 1s ease-in-out',
-        }}    >
-          <About />
+      </div>
       </section>
 
-      
-
-      <section className='resumeInfo' id='resume'     style={{
-          opacity: isVisible.div2 ? 1 : 0,
-          transition: 'opacity 1s ease-in-out',
-        }}>
-          <Resume />
-      </section>
-
-
-      <section className='work' id='work' style={{
-                opacity: isVisible.div3 ? 1 : 0,
-                transition: 'opacity 1s ease-in-out',
-              }}>
-                <Work />
-      </section>
-
- 
-    <section id='contact' className='contactSection' style={{
-          opacity: isVisible.div4 ? 1 : 0,
-          transition: 'opacity 1s ease-in-out',
-        }}>
-           <Footer/>
-    </section>
-</main>
 
   );
 }

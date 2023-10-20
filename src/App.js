@@ -1,20 +1,29 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Home from './pages/Home.js';
-import { Route, Routes, Navigate } from "react-router-dom";
 import Header from './components/Header';
-  const App = () => {
-  return (
-    
-    <div className='hero'>
-      
-    <Header/>
-      <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="*" element={<Navigate to="/" replace />} /> 
-      </Routes>
+import Work from './components/Work';
+import About from './components/About';
+import Resume from './components/Expertise';
+import Footer from './components/Footer';
+import Mouse from './components/Mouse';
 
-    </div>
-    
+  const App = () => {
+
+    const [currentPage, setCurrentPage] = useState('home')
+    const handleNavigationClick = (page) => {
+      setCurrentPage(page);
+    };
+  return (
+
+    <>
+      <Mouse />
+      <Header currentPage={currentPage}/>
+      <Home />
+      <About />
+      <Resume /> 
+      <Work />
+      <Footer />
+</>
 
   );
 }

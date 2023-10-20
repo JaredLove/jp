@@ -1,105 +1,108 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faImage, faDatabase, faThumbsUp, faCircleCheck, faCheck} from '@fortawesome/free-solid-svg-icons';
+import { faImage, faDatabase, faThumbsUp, faCircleCheck, faCheck, faUser} from '@fortawesome/free-solid-svg-icons';
 import './style.css';
+import { faBootstrap, faCss3, faCss3Alt, faGithub, faHtml5, faJs, faNode, faNodeJs, faReact } from "@fortawesome/free-brands-svg-icons";
 
 function Resume() {
 
 return (
-    <div className='resumeInfo'>
-      
-      <div><h1 className='resumeTitle'>Expertise</h1>
-      <div className="cover-expertise"></div>
+    <section className='resumeInfo'>
+      <h2>My Skills</h2>
+      <div className="developer-section">
+            <div className="borderInfo1">
+
+              <FontAwesomeIcon icon={faUser} className="icon"/>
+              <h3>Frontend Developer</h3>
+
+              <ol>
+                <li>
+                  <p><FontAwesomeIcon icon={faCircleCheck} /> HTML5</p>
+                </li>
+                <li>
+                  <p><FontAwesomeIcon icon={faCircleCheck} /> CSS3</p>
+                </li>
+                <li>
+                  <p><FontAwesomeIcon icon={faCircleCheck} /> JavaScript</p>
+
+                </li>
+                <li>
+                  <p><FontAwesomeIcon icon={faCircleCheck} /> React</p>
+                </li>
+                <li>
+
+                  <p><FontAwesomeIcon icon={faCircleCheck} /> Bootstrap</p>
+                </li>
+                <li>
+                  <p><FontAwesomeIcon icon={faCircleCheck} /> Jquery</p>
+                </li>
+                <li>
+                  <p><FontAwesomeIcon icon={faCircleCheck} /> Redux</p>
+                </li>
+              </ol>
+            </div>
+            <div className="borderInfo1">
+              <FontAwesomeIcon icon={faDatabase} className="icon"/>
+              <h3>Backend Developer</h3>
+              <ol>
+                <li>
+                  <p><FontAwesomeIcon icon={faCircleCheck} /> Node.js</p>
+                </li>
+                <li>
+                  <p><FontAwesomeIcon icon={faCircleCheck} /> Express.js</p>
+                </li>
+                <li>
+                  <p> <FontAwesomeIcon icon={faCircleCheck} /> MySQL</p>
+                </li>
+                <li>
+                  <p> <FontAwesomeIcon icon={faCircleCheck} /> MongoDB</p>
+                </li>
+                <li>
+                  <p> <FontAwesomeIcon icon={faCircleCheck} /> GraphQL</p>
+                </li>
+                <li>
+                  <p> <FontAwesomeIcon icon={faCircleCheck} /> RESTful API</p>
+                </li>
+                <li> 
+                  <p><FontAwesomeIcon icon={faCircleCheck} /> Mongoose </p>
+                  </li>
+              </ol>
+            </div>
+            <div className="borderInfo1">
+              <FontAwesomeIcon icon={faThumbsUp} className="icon"/>
+              <h3>Tools</h3>
+                <ol>
+                  <li>
+                    <p> <FontAwesomeIcon icon={faCircleCheck} /> Full Stack</p>
+                  </li>
+                  <li>
+                    <p><FontAwesomeIcon icon={faCircleCheck} /> Problem Solver</p>
+                  </li>
+                  <li>
+                    <p><FontAwesomeIcon icon={faCircleCheck} /> Git</p>
+                  </li>
+                  <li>
+                    <p><FontAwesomeIcon icon={faCircleCheck} /> Github</p>
+                  </li>
+                  <li>
+                    <p><FontAwesomeIcon icon={faCircleCheck} /> Heroku</p>
+                  </li>
+                  <li>
+                    <p><FontAwesomeIcon icon={faCircleCheck} /> Netlify</p>
+                  </li>
+                  <li>
+                    <p><FontAwesomeIcon icon={faCircleCheck} /> VS Code</p>
+                  </li>
+                </ol>
+            </div>
       </div>
 
+      <div className="technologies">
+          <p>Take a look at my <button className="btn">Resume</button></p>
 
-      <div className="expertise-content">
-      <ul>
-      <li className='borderInfo1'>
-      <div className='frontEnd'>
-      <h1>Frontend Developer</h1>
-      <span className='icon'><FontAwesomeIcon icon={faImage} /></span>
-            <ol>
-              <li><FontAwesomeIcon icon={faCheck} className="fai" />Crafting Engaging Interfaces</li>
-              <li><FontAwesomeIcon icon={faCheck} className="fai" />Code with Creative Vision</li>
-              <li><FontAwesomeIcon icon={faCheck} className="fai" />Responsive Design Expertise</li>
-              <li><FontAwesomeIcon icon={faCheck} className="fai" />User-Centric Frontend Solutions</li>
-            </ol>
-      </div>
-
-      </li>
-      <li className='borderInfo1'>
-
-      <div className='backEnd'>
-      <div >
-
-
-
-      </div> 
-      <h1>Backend Developer</h1> 
-      <span className='icon'><FontAwesomeIcon icon={faDatabase} /></span>
-      <ol>
-              <li><FontAwesomeIcon icon={faCheck} className="fai" />Powering Apps Efficiently</li>
-              <li><FontAwesomeIcon icon={faCheck} className="fai" />Database Management</li>
-              <li><FontAwesomeIcon icon={faCheck} className="fai" />Security and Reliability Focus</li>
-              <li><FontAwesomeIcon icon={faCheck} className="fai" />Server-Side Logic</li>
-      </ol>
 
       </div>
-      </li>
-      <li className='borderInfo1'>
-      <div className='value'>
-        <div> 
-
-      </div>
-      <h1>Value</h1>  
-      <span className='icon'><FontAwesomeIcon icon={faThumbsUp} /></span>
-      <ol>
-              <li>
-                <FontAwesomeIcon icon={faCheck} className="fai" />
-               Full Stack Versatility
-              </li>
-              <li><FontAwesomeIcon icon={faCheck} className="fai" />Passionate Problem Solver</li>
-              <li><FontAwesomeIcon icon={faCheck} className="fai" />Collaborative Partner</li>
-              <li><FontAwesomeIcon icon={faCheck} className="fai" />Technical Solutions for Success</li>
-      </ol>
-
-      </div>
-      </li>
-      </ul>
-      </div>
-<div className="tech-list-container">
-  <div className="tech-title"><h2>Here are some technologies I’ve been working with recently:</h2></div>
-
-    <div className='techList'>
-    <div className="techListContent">
-    <ul>
-        <li><span><FontAwesomeIcon icon={faCircleCheck} className="mint"/>  React</span></li>
-        <li><span><FontAwesomeIcon icon={faCircleCheck} className="mint"/> JavaScript (ES6+)</span></li>
-        <li><span><FontAwesomeIcon icon={faCircleCheck} className="mint"/> HTML & CSS</span></li>
-        <li><span><FontAwesomeIcon icon={faCircleCheck} className="mint"/> MERN</span></li>
-        <li><span><FontAwesomeIcon icon={faCircleCheck} className="mint"/> MVC</span></li>
-        <li><span><FontAwesomeIcon icon={faCircleCheck} className="mint"/> Handlebars</span></li>
-        <li><span><FontAwesomeIcon icon={faCircleCheck} className="mint"/> Bootstrap</span></li>
-    </ul>
-    </div>
-    <div>
-      <ul>
-        <li><span><FontAwesomeIcon icon={faCircleCheck} className="mint"/> MySQL</span></li>
-        <li><span><FontAwesomeIcon icon={faCircleCheck} className="mint"/> Node.js</span></li>
-        <li><span><FontAwesomeIcon icon={faCircleCheck} className="mint"/> MongoDB</span></li>
-        <li><span><FontAwesomeIcon icon={faCircleCheck} className="mint"/> Express</span></li>
-        <li><span><FontAwesomeIcon icon={faCircleCheck} className="mint"/> jQuery</span></li>
-        <li><span><FontAwesomeIcon icon={faCircleCheck} className="mint"/> RESTful APIs</span></li>
-        <li><span><FontAwesomeIcon icon={faCircleCheck} className="mint"/> GraphQL</span></li>
-      </ul>
-    </div>
-    </div>
-    <div>
-    <h1 className='resumeLink'>Take a look at my <a href="/" target="_blank" rel="noopener noreferrer">Resume</a></h1> 
-    </div>
-    </div>
-    </div>
+    </section>
 );
 }
 

@@ -3,7 +3,7 @@ import { FaBars } from "react-icons/fa";
 
 import './nav.css'
 
-const Header = () => {
+const Header = ({handleNavigationClick, currentPage}) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   const close = () => setIsOpen(false);
@@ -24,9 +24,9 @@ const Header = () => {
     <header className="header">
     <nav className="navbar">
       <div className="navbar-container">
-        <a href="#home" className="navbar-brand">
+        <button className="navbar-brand" onClick={() => handleNavigationClick('work')}>
           J.
-        </a>
+        </button>
         <button className="navbar-toggler" onClick={toggle}>
           <FaBars />
         </button>
@@ -34,16 +34,16 @@ const Header = () => {
           className={`navbar-nav ${isOpen ? "navbar-open" : "navbar-closed"}`}
         >
           <li className="nav-item">
-          <button onClick={() => scrollToSection('about')} handleClick={close}>About</button>
+          <button onClick={() => handleNavigationClick('about')} style={{ color: currentPage === 'about' ? '#777777' : '#ecedee' }}>About</button>
           </li>
           <li className="nav-item">
-          <button onClick={() => scrollToSection('resume')} handleClick={close}>Expertise</button>
+          <button onClick={() => handleNavigationClick('resume')} style={{ color: currentPage === 'expertise' ? '#777777' : '#ecedee' }}>Expertise</button>
           </li>
           <li className="nav-item">
-          <button onClick={() => scrollToSection('work')} handleClick={close}>Work</button>
+          <button onClick={() => handleNavigationClick('work')} style={{ color: currentPage === 'work' ? '#777777' : '#ecedee' }}>Work</button>
           </li>
           <li className="nav-item">
-          <button onClick={() => scrollToSection('contact')} handleClick={close}><span className="contact-link">Contact</span></button>
+          <button onClick={() => handleNavigationClick('contact')} style={{ color: currentPage === 'contact' ? '#777777' : '#ecedee' }}><span className='bn30'>Contact</span></button>
           </li>
         </ul>
       </div>

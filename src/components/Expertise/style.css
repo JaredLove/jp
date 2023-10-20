@@ -1,71 +1,103 @@
 /* Expertise Resume CSS */
-:root {
-  --primary:  #323333;
-  --secondary: #C0C0C0;
-  --teal: #37B6BD;
-  --text: #ffffff;
-  --textp: #AAB7B8;
-  --white: #FFF;
-  --black: #000;
-  --light-black: #1f1e1e;
-  --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-  --mint: #6AC9A8;
-  --CrispWhite: #FFFFFF;
-  --goldenYellow: #FFD700;
-  --slateBlue: #6A5ACD;  
-  --lightSlateBlue: #a094f3;
-  --lightCharcoal: #777777;
-}
-
-
+  .borderInfo1 {
+    background: rgba(142, 138, 138, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 50px;
+    width: 400px;
+    height: 500px;
+    margin: 0 50px;
+    text-align: center;
+  }
 
 .resumeInfo {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
-    margin-top: 250px;
+    height: 200vh;
+    max-height: 100%;
     
   }
 
-.cover-expertise{
-  background-color: rgba(255, 215, 0, .8);
-  width: 145px;
-  height: 12px;
-  position: relative;
-  bottom: 15px;
-}
-  
-  .resumeTitle {
-    font-size: 30px;
-    color: var(--text);
+  .resumeInfo h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--secondary);
+    font-size: 8rem;
+    padding-bottom: 40px;
   }
-  
-  ul li {
-    list-style-type: none;
-  }
-  .resumeInfo ul li {
-    margin: 0 5px;
-  }
-  .resumeInfo ul {
+
+  .developer-section {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    padding: 20px;
-    margin: 0 100px;
+  }
+
+  .developer-section h3 {
+    color: var(--white);
+    padding-top: 20px;
+  }
+
+  ol {
+  
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0;
   
   }
+
   
+  ol li {
+    text-align: center;
+    list-style-type: none;
+    margin: 10px 0; /* Add spacing between list items if desired */
+  }
+
+  ol li p {
+display: flex;
+justify-content: center;
+align-items: center;
+    text-align: center;
+    font-size: 25px;
+    color: var(--textp);
+  }
+
   .icon {
     color: var(--goldenYellow);
     font-size: 50px;
   }
 
+  .technologies p {
+    color: var(--secondary);
+    padding-top: 50px;
+    font-size: 30px;
+  }
+
+  .btn {
+
+    border: 1px solid var(--lightCharcoal);
+    border-radius: 10px;
+    padding: 10px;
+    background: none;
+    color: var(--primary);
+    font-size: 20px;
+  }
+
+  .btn:hover {
+    background: var(--goldenYellow);
+    transition: all 0.5s ease-in-out;
+    color: var(--black);
+  }
   
 
+  
+
+
+@media screen and (min-width: 50px ) and (max-width: 499px) {
+  
   
   .borderInfo1 {
     background: rgba(142, 138, 138, 0.26);
@@ -74,220 +106,66 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-  
-  }
-  .skill {
-    margin: 20px 300px;
-    list-style: none;
-  }
-  
-  .resumeLink {
-    color: #fff;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 10px 0;
     text-align: center;
-    font-size: 30px;
   }
 
-  .resumeLink a {
-    color: var(--goldenYellow);
-  }
-  
-  .techList {
-    display: flex;
-    justify-content: center;
-    margin: 50px;
-}
-
-
-
-
-.techList ul {
-display: grid;
-}
-
-.techList ul li {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    margin: 5px 0;
-    color: var(--textp);
-}
-
-
-
-
-.resumeInfo ol {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 50px;
-
-}
-
-.resumeInfo ol li {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    margin: 20px 0;
-    
-}
-
-.tech-title h2 {
-  text-align: center;
-  font-size: 20px;
-  color: var(--CrispWhite);
-}
-
-.mint {
-  color: var(--goldenYellow);
-}
-
-.fai {
-  margin-right: 10px;
-
-}
-
-@media screen and (min-width: 50px ) and (max-width: 344px) {
-  
-  
-  .resumeInfo {
+.resumeInfo {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100%;
-    width: 100%;
     max-height: 100%;
-    margin-top: 250px;
-    
+    max-width: 100%; 
   }
 
-  .expertise-content {
-    white-space: normal;
+  .resumeInfo h2 {
+    color: var(--white);
+    font-size: 30px;
   }
 
-
-  .resumeInfo ul {
+  .developer-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    padding: 20px;
-    margin: 30px 0;
-  
-  }
-
-  .resumeInfo ul li {
-    margin: 10px 0;
-  }
-
-  .techList {
-    display: flex;
     justify-content: center;
-    margin: 50px;
-
-}
-.techList ul {
-  display: grid;
-
-  
+    align-items: center;
   }
 
-  .techList ul li {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    margin: 5px 0;
+  .developer-section h3 {
+    color: var(--white);
+    padding-top: 30px;
+  }
+
+    ol {
+      display: flex;
+      flex-direction: column;
+
+      padding: 0;
+    }
+  
+  ol li {
+    list-style-type: none;
     color: var(--textp);
-    font-size: 13px;
-}
-
-.tech-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.tech-list-container {
-  width: 100%;
-}
-
-.tech-title h2 {
-
-  width: 30ch;
-  font-size: 12px;
-  color: var(--CrispWhite);
-}
-
-.frontEnd h1 {
-  font-size: 25px;
-}
-
-.backEnd h1 {
-  font-size: 25px;
-}
-
-.value h1 {
-  font-size: 25px;
-}
-}
-
-@media screen and (min-width: 345px ) and (max-width: 800px) {
-    .resumeInfo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      height: 100%;
-      max-height: 300vh;
-      margin-top: 250px;
-      
-    }
-
-    .expertise-content {
-      white-space: normal;
-    }
-
-
-    .resumeInfo ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      color: #fff;
-      padding: 20px;
-      margin: 30px 0;
-    
-    }
-
-    .resumeInfo ul li {
-      margin: 10px 0;
-    }
-
-    .techList {
-      display: flex;
-      justify-content: center;
-      margin: 50px;
-
-  }
-  .techList ul {
-    display: grid;
-
-    
-    }
-
-    .techList ul li {
-      display: flex;
-      align-items: center;
-      text-align: left;
-      margin: 5px 0;
-      color: var(--textp);
-      font-size: 13px;
+    font-size: 20px;
+    padding: 0;
+    display: block;
   }
 
-  .tech-title {
+  ol li p {
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .icon {
+    color: var(--goldenYellow);
+    font-size: 30px;
+  }
+
+  .technologies {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -295,190 +173,278 @@ display: grid;
     text-align: center;
   }
 
-  .tech-title h2 {
-
-    width: 30ch;
+  .technologies p {
+    color: var(--textp);
     font-size: 20px;
-    color: var(--CrispWhite);
+    width: 20ch;
   }
 
-  .frontEnd h1 {
-    font-size: 25px;
+  .technologies p button.bn30 {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 500px ) and (max-width: 800px) {
+  .borderInfo1 {
+    background: rgba(142, 138, 138, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 60px;
+    width: 100%;
+    height: 100%;
+    margin: 10px 0;
+    text-align: center;
   }
 
-  .backEnd h1 {
-    font-size: 25px;
+.resumeInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%; 
   }
 
-  .value h1 {
+  .resumeInfo h2 {
+    color: var(--white);
+    font-size: 30px;
+  }
+
+  .developer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .developer-section h3 {
+    color: var(--white);
+    padding-top: 30px;
+  }
+
+    ol {
+      display: flex;
+      flex-direction: column;
+
+      padding: 0;
+    }
+  
+  ol li {
+    list-style-type: none;
+    color: var(--textp);
+    font-size: 20px;
+    padding: 0;
+    display: block;
+  }
+
+  ol li p {
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .icon {
+    color: var(--goldenYellow);
+    font-size: 30px;
+  }
+
+  .technologies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .technologies p {
+    color: var(--header);
     font-size: 25px;
+    width: 20ch;
+  }
+
+  .technologies p button.bn30 {
+    margin-top: 10px;
+    font-size: 20px;
   }
 }
 
 
 @media screen and (min-width: 801px) and (max-width: 1000px) {
 
-  .resumeInfo {
+  .borderInfo1 {
+    background: rgba(142, 138, 138, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+.resumeInfo {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100%;
-    max-height: 300vh;
-    margin-top: 250px;
-    
+    max-height: 100%;
+    max-width: 100%; 
   }
 
-  .expertise-content {
-    white-space: normal;
+  .resumeInfo h2 {
+    color: var(--white);
+    font-size: 30px;
   }
 
-
-  .resumeInfo ul {
+  .developer-section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .developer-section h3 {
+    color: var(--white);
+    padding-top: 30px;
+  }
+
+    ol {
+      display: flex;
+      flex-direction: column;
+
+      padding: 0;
+    }
+  
+  ol li {
+    list-style-type: none;
+    color: var(--textp);
+    font-size: 20px;
+    padding: 0;
+    display: block;
+  }
+
+  ol li p {
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .icon {
+    color: var(--goldenYellow);
+    font-size: 30px;
+  }
+
+  .technologies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff;
-    padding: 20px;
-    margin: 30px 0;
-  
   }
 
-  .resumeInfo ul li {
-    margin: 10px 0;
+  .technologies p {
+    color: var(--header);
+    font-size: 20px;
+    width: 20ch;
   }
 
-  .techList {
-    display: flex;
-    justify-content: center;
-    margin: 50px;
-
-}
-
-
-.techList ul {
-  display: grid;
-  
+  .technologies p button.bn30 {
+    margin-top: 10px;
+    font-size: 15px;
   }
-
-  .techList ul li {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    margin: 5px 0;
-    color: var(--textp);
-    font-size: 13px;
-}
-
-.tech-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.tech-title h2 {
-
-  width: 30ch;
-  font-size: 20px;
-  color: var(--CrispWhite);
-}
-
-.frontEnd h1 {
-  font-size: 25px;
-}
-
-.backEnd h1 {
-  font-size: 25px;
-}
-
-.value h1 {
-  font-size: 25px;
-}
 }
 
 @media screen and (min-width: 1001px) and (max-width: 1482px)  {
 
-  .resumeInfo {
+  .borderInfo1 {
+    background: rgba(142, 138, 138, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 50px;
+    width: 280px;
+    height: 500px;
+    margin: 10px 20px;
+    text-align: center;
+  }
+
+.resumeInfo {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100%;
-    max-height: 300vh;
-    margin-top: 250px;
-    
+    max-height: 100%;
+    max-width: 100%; 
   }
 
-  .expertise-content {
-    white-space: normal;
+  .resumeInfo h2 {
+    color: var(--white);
+    font-size: 30px;
   }
 
+  .developer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 
-  .resumeInfo ul {
+  .developer-section h3 {
+    color: var(--white);
+    padding-top: 30px;
+  }
+
+    ol {
+      display: flex;
+      flex-direction: column;
+
+      padding: 0;
+    }
+  
+  ol li {
+    list-style-type: none;
+    color: var(--textp);
+    font-size: 20px;
+    padding: 0;
+    display: block;
+  }
+
+  ol li p {
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .icon {
+    color: var(--goldenYellow);
+    font-size: 30px;
+  }
+
+  .technologies {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff;
-    padding: 20px;
-    margin: 30px 0;
-  
   }
 
-  .resumeInfo ul li {
-    margin: 10px 0;
+  .technologies p {
+    color: var(--header);
+    font-size: 20px;
+    width: 20ch;
   }
 
-  .techList {
-    display: flex;
-    justify-content: center;
-    margin: 50px;
-
-}
-
-
-
-.techList ul {
-  display: grid;
-  
+  .technologies p button.bn30 {
+    margin-top: 10px;
+    font-size: 15px;
   }
-
-  .techList ul li {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    margin: 5px 0;
-    color: var(--textp);
-    font-size: 13px;
-}
-
-.tech-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.tech-title h2 {
-
-  width: 30ch;
-  font-size: 20px;
-  color: var(--CrispWhite);
-}
-
-.frontEnd h1 {
-  font-size: 25px;
-}
-
-.backEnd h1 {
-  font-size: 25px;
-}
-
-.value h1 {
-  font-size: 25px;
-}
 }
