@@ -6,19 +6,19 @@ import './nav.css'
 const Header = ({handleNavigationClick, currentPage}) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
-  const close = () => setIsOpen(false);
+  // const close = () => setIsOpen(false);
 
-  const scrollToSection = (sectionId) => {
+  // const scrollToSection = (sectionId) => {
     
-    const section = document.getElementById(sectionId);
-    if (section) {
+  //   const section = document.getElementById(sectionId);
+  //   if (section) {
       
-      section.scrollIntoView({
-        behavior: 'smooth',
-      });
-    }
-    close();
-  };
+  //     section.scrollIntoView({
+  //       behavior: 'smooth',
+  //     });
+  //   }
+  //   close();
+  // };
 
   return (
     <header className="header">

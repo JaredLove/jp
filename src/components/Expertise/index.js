@@ -1,8 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faImage, faDatabase, faThumbsUp, faCircleCheck, faCheck, faUser} from '@fortawesome/free-solid-svg-icons';
+import { faDatabase, faThumbsUp, faCircleCheck, faUser} from '@fortawesome/free-solid-svg-icons';
 import './style.css';
-import { faBootstrap, faCss3, faCss3Alt, faGithub, faHtml5, faJs, faNode, faNodeJs, faReact } from "@fortawesome/free-brands-svg-icons";
 
 function Resume() {
 
