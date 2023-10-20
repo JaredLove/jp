@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Home from './pages/Home.js';
 import Header from './components/Header';
 import Work from './components/Work';
@@ -9,15 +9,12 @@ import Mouse from './components/Mouse';
 
   const App = () => {
 
-    const [currentPage, setCurrentPage] = useState('home')
-    const handleNavigationClick = (page) => {
-      setCurrentPage(page);
-    };
+
   return (
 
     <>
       <Mouse />
-      <Header currentPage={currentPage}/>
+      <Header />
       <Home />
       <About />
       <Resume /> 
