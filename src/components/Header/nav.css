@@ -10,6 +10,7 @@ nav {
   align-items: center;
   height: 100%;
   padding: 0 20px;
+  width: 100%;
 }
 
 
@@ -130,8 +131,9 @@ nav {
   z-index: 1;
   transform: translateY(0);
   transition: all 0.3s ease-in-out;
-  height: 100vh;
+  height: 100%;
   text-align: center;
+  width: 100%;
 }
 
 .navbar-container ul li {

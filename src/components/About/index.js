@@ -25,8 +25,8 @@ function About() {
           color: '#b7ab98',
           scrollTrigger: {
             trigger: span,
-            start: 'top 100%',
-            end: 'bottem 10%',
+            start: 'top 90%',
+            end: 'bottem 50%',
             scrub: true,
           },
           delay: 1 * index, // Delay each character's animation

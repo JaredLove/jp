@@ -1,21 +1,6 @@
 import React from 'react';
 import Lottie from 'lottie-react';
 const  Home = () => { 
-//   const [isOpen, setIsOpen] = useState(false);
-
-//   const handleOpen = () => {
-//     setIsOpen(true);
-//   };
-
-//   const handleClose = () => {
-//     setIsOpen(false);
-//   };
-
-// const handleClick = () => {
-//   console.log('clicked');
-// }
-
-
 
   return (
 
