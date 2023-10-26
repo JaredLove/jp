@@ -837,6 +837,7 @@ display: none;
        height: 70vh;
        max-height: 100%;
       line-height: .9;
+      margin-top: 50px;
      }
     
      .full-stack-container {
@@ -858,7 +859,7 @@ display: none;
       color: var(--secondary);
       letter-spacing: .01em;
       font-size: 17rem;
-      padding-right: 5px;
+      padding-right: 26px;
      }
     
      .web-dev-container {
