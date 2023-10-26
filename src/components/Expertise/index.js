@@ -97,7 +97,7 @@ return (
       </div>
 
       <div className="technologies">
-          <p>Take a look at my <button className="btn">Resume</button></p>
+          <p>Take a look at my <a href="https://docs.google.com/document/d/e/2PACX-1vTj_G_zMfLDdIH0LuF3UZjn0SaTQf8NjAnTxhap7YykgvhhOlZ48qiw7WP4hUEDerdjfShkr_yQplXf/pub" target="_blank" rel="noreferrer"><button className="btn" >Resume</button></a></p>
 
 
       </div>
