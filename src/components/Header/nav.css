@@ -120,7 +120,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 1);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -130,12 +130,15 @@ nav {
   top: 60px;
   right: 0;
   left: 0;
-  z-index: 1;
   transform: translateY(0);
   transition: all 0.3s ease-in-out;
   height: 100%;
+  max-height: 100%;
   text-align: center;
+  position: fixed;
   width: 100%;
+
+  z-index: 999; /* Place it above other elements */
 }
 
 .navbar-container ul li {

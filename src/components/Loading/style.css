@@ -1,0 +1,43 @@
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #292828;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 32px;
+    color: var(--secondary);
+  }
+  
+  .cycle-text {
+    display: inline-block;
+    font-size: 24px;
+    color: var(--secondary);
+    animation: cycle 5s linear infinite; /* 5 seconds per cycle */
+  }
+  
+  @keyframes cycle {
+    0%, 100% {
+      opacity: 0;
+    }
+    25%, 75% {
+      opacity: 1;
+    }
+    85%, 95% {
+      opacity: 0;
+    }
+  }
+  
+  .developer, .coffee-enthusiast {
+    display: inline-block;
+  }
+  
+  .coffee-enthusiast {
+    animation-delay: 2.5s; /* Delay the start of this animation by half of the cycle time */
+  }

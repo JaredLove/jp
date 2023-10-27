@@ -10,7 +10,7 @@ const  Home = () => {
       <div className='full-stack-container'>
         <div className='full-stack'>
           <h2><span className='hover-header'>F</span><span className='hover-header'>U</span><span className='hover-header'>L</span><span className='hover-header'>L</span></h2>
-          <h2 id='tags' className='hover-header'>----</h2>
+          <h2 id='tags' className='hover-header'>-</h2>
           <h2><span className='hover-header'>S</span><span className='hover-header'>T</span><span className='hover-header'>A</span><span className='hover-header'>C</span><span className='hover-header'>K</span></h2>
         </div>
       </div>
