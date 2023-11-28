@@ -16,27 +16,27 @@ return (
 
               <ol>
                 <li>
-                  <p><FontAwesomeIcon icon={faCircleCheck} /> HTML5</p>
+                  <p><FontAwesomeIcon icon={faCircleCheck} /><span className="p"></span>HTML5</p>
                 </li>
                 <li>
-                  <p><FontAwesomeIcon icon={faCircleCheck} /> CSS3</p>
+                  <p><FontAwesomeIcon icon={faCircleCheck} /><span className="p"></span>CSS3</p>
                 </li>
                 <li>
-                  <p><FontAwesomeIcon icon={faCircleCheck} /> JavaScript</p>
+                  <p><FontAwesomeIcon icon={faCircleCheck} /><span className="p"></span>JavaScript</p>
 
                 </li>
                 <li>
-                  <p><FontAwesomeIcon icon={faCircleCheck} /> React</p>
+                  <p><FontAwesomeIcon icon={faCircleCheck} /><span className="p"></span>React</p>
                 </li>
                 <li>
 
-                  <p><FontAwesomeIcon icon={faCircleCheck} /> Bootstrap</p>
+                  <p><FontAwesomeIcon icon={faCircleCheck} /><span className="p"></span>Bootstrap</p>
                 </li>
                 <li>
-                  <p><FontAwesomeIcon icon={faCircleCheck} /> Jquery</p>
+                  <p><FontAwesomeIcon icon={faCircleCheck} /><span className="p"></span>Jquery</p>
                 </li>
                 <li>
-                  <p><FontAwesomeIcon icon={faCircleCheck} /> Redux</p>
+                  <p><FontAwesomeIcon icon={faCircleCheck} /><span className="p"></span>Redux</p>
                 </li>
               </ol>
             </div>
@@ -45,25 +45,25 @@ return (
               <h3>Backend Developer</h3>
               <ol>
                 <li>
-                  <p><FontAwesomeIcon icon={faCircleCheck} /> Node.js</p>
+                  <p><FontAwesomeIcon icon={faCircleCheck} /><span className="p"></span>Node.js</p>
                 </li>
                 <li>
-                  <p><FontAwesomeIcon icon={faCircleCheck} /> Express.js</p>
+                  <p><FontAwesomeIcon icon={faCircleCheck} /><span className="p"></span>Express.js</p>
                 </li>
                 <li>
-                  <p> <FontAwesomeIcon icon={faCircleCheck} /> MySQL</p>
+                  <p> <FontAwesomeIcon icon={faCircleCheck} /><span className="p"></span>MySQL</p>
                 </li>
                 <li>
-                  <p> <FontAwesomeIcon icon={faCircleCheck} /> MongoDB</p>
+                  <p> <FontAwesomeIcon icon={faCircleCheck} /><span className="p"></span>MongoDB</p>
                 </li>
                 <li>
-                  <p> <FontAwesomeIcon icon={faCircleCheck} /> GraphQL</p>
+                  <p> <FontAwesomeIcon icon={faCircleCheck} /><span className="p"></span>GraphQL</p>
                 </li>
                 <li>
-                  <p> <FontAwesomeIcon icon={faCircleCheck} /> RESTful API</p>
+                  <p> <FontAwesomeIcon icon={faCircleCheck} /><span className="p"></span>REST</p>
                 </li>
                 <li> 
-                  <p><FontAwesomeIcon icon={faCircleCheck} /> Mongoose </p>
+                  <p><FontAwesomeIcon icon={faCircleCheck} /><span className="p"></span>Mongoose </p>
                   </li>
               </ol>
             </div>
@@ -72,25 +72,25 @@ return (
               <h3>Tools</h3>
                 <ol>
                   <li>
-                    <p> <FontAwesomeIcon icon={faCircleCheck} /> Full Stack</p>
+                    <p> <FontAwesomeIcon icon={faCircleCheck} /><span className="p"></span>Full Stack</p>
                   </li>
                   <li>
-                    <p><FontAwesomeIcon icon={faCircleCheck} /> Problem Solver</p>
+                    <p><FontAwesomeIcon icon={faCircleCheck} /><span className="p"></span>Collaboration</p>
                   </li>
                   <li>
-                    <p><FontAwesomeIcon icon={faCircleCheck} /> Git</p>
+                    <p><FontAwesomeIcon icon={faCircleCheck} /><span className="p"></span>Git</p>
                   </li>
                   <li>
-                    <p><FontAwesomeIcon icon={faCircleCheck} /> Github</p>
+                    <p><FontAwesomeIcon icon={faCircleCheck} /><span className="p"></span>Github</p>
                   </li>
                   <li>
-                    <p><FontAwesomeIcon icon={faCircleCheck} /> Heroku</p>
+                    <p><FontAwesomeIcon icon={faCircleCheck} /><span className="p"></span>Heroku</p>
                   </li>
                   <li>
-                    <p><FontAwesomeIcon icon={faCircleCheck} /> Netlify</p>
+                    <p><FontAwesomeIcon icon={faCircleCheck} /><span className="p"></span>Netlify</p>
                   </li>
                   <li>
-                    <p><FontAwesomeIcon icon={faCircleCheck} /> VS Code</p>
+                    <p><FontAwesomeIcon icon={faCircleCheck} /><span className="p"></span>VS Code</p>
                   </li>
                 </ol>
             </div>

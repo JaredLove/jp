@@ -61,7 +61,7 @@ function Work() {
           </div>
         </div>
         <div className="work-content">
-          <h1>Password Helper</h1>
+          <h1>Fast Pass</h1>
           <hr></hr>
           <p>A website that allows users to generate a random password.</p>
           <p>HTML CSS JavaScript</p>

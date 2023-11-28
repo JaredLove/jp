@@ -3,8 +3,6 @@
     background: rgba(142, 138, 138, 0.26);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 50px;
     width: 400px;
@@ -51,18 +49,24 @@
 
   
   ol li {
-    text-align: center;
+    text-align: left;
     list-style-type: none;
     margin: 10px 0; /* Add spacing between list items if desired */
   }
 
   ol li p {
 display: flex;
-justify-content: center;
+justify-content: left;
 align-items: center;
     text-align: center;
     font-size: 25px;
+    width: 11ch;
+    margin: 0 auto;
     color: var(--textp);
+  }
+
+  .p {
+    margin: 0 2px;
   }
 
   .icon {

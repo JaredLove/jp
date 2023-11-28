@@ -15,7 +15,6 @@ import Mouse from './components/Mouse';
  
     const handleNavigationClick = (page) => {
       setCurrentPage(page);
-      console.log(currentPage);
     };
 
     // useEffect(() => {
