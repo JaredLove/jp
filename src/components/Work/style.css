@@ -8,12 +8,18 @@
       margin-top: 20px;
       margin-bottom: 50px;
     }
+    .work-header{
+      display: flex;
+      flex-direction: row;
+    }
+    
 
     .work-container h2 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 8rem;
+      font-size: 2rem;
+      font-weight: 600;
       color: var(--secondary);
     }
+
     .work {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

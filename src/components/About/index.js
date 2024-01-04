@@ -1,46 +1,19 @@
-import React, { useEffect } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger'; // Import ScrollTrigger
+import React from 'react';
 import me from '../../assets/imagesOfMe/image3.jpeg';
 import './style.css';
-gsap.registerPlugin(ScrollTrigger);
 
 
 
 function About() {
-  useEffect(() => {
-    const paragraphs = document.querySelectorAll('.color-change-paragraph');
-
-    paragraphs.forEach((paragraph) => {
-      const text = paragraph.innerText;
-      paragraph.innerText = '';
-
-      text.split('').forEach((char, index) => {
-        const span = document.createElement('span');
-        span.innerText = char;
-        span.style.color = '#363636';
-        paragraph.appendChild(span);
-
-        gsap.to(span, {
-          color: '#b7ab98',
-          scrollTrigger: {
-            trigger: span,
-            start: 'top 90%',
-            end: 'bottem 50%',
-            scrub: true,
-          },
-          delay: 1 * index, // Delay each character's animation
-          duration: 5,
-        });
-      });
-    });
-  }, []);
 
   return (
     <section className='about'>
+      <div className='about-header'>
       <h2>About Me</h2>
+      <div className='line-header'></div>
+      </div>
       <div className='about-content'>
-    <div className="color-change-paragraph">
+    <div>
      
       <p>
       Hey, I'm Jared, but you can call me Jay. I'm a full stack web developer with a passion for creating and learning.
@@ -53,7 +26,7 @@ function About() {
       </p>
 
     </div>
-    <div>
+    <div className="image-container">
       <img src={me} alt="me" className="me"/>
     </div>
     </div>

@@ -14,7 +14,7 @@ const Header = ({handleNavigationClick, currentPage}) => {
     <nav className="navbar">
       <div className="navbar-container">
         <button className="navbar-brand" onClick={() => handleNavigationClick('home')}>
-        <a href="#home">J.</a>
+        <a href="#home" id="brand">J.</a>
         </button>
         <button className="navbar-toggler" onClick={toggle}>
           <FaBars />

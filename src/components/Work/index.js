@@ -7,7 +7,10 @@ function Work() {
 
   return (
     <section className="work-container">
+      <div className="work-header">
       <h2>My Work</h2>
+      <div className='line-header'></div>
+      </div>
       <div className="work">
         
         <div className="work-content" id="work-content">
