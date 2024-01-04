@@ -1,5 +1,4 @@
 import React from 'react';
-import me from '../assets/imagesOfMe/image3.jpeg';
 const  Home = () => { 
 
   return (
