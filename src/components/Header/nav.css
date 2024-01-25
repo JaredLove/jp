@@ -1,7 +1,7 @@
 header {
   width: 100%;
   text-align: center;  
-  height: 80px;
+  height: 70px;
 }
 
 nav {
@@ -18,6 +18,7 @@ nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  font-size: 20px;
   margin-right: 25px;
   margin-left: 25px;
 }
@@ -30,26 +31,19 @@ nav {
 }
 
 .navbar-nav li {
-  font-weight: 600;
   margin: 0 20px;
-  font-size: 1.5rem;
+  font-size: 20px;
   list-style: none;
 }
 
 .navbar-brand {
+  color: var(--white);
   font-size: 1.5rem;
-  font-weight: 600;
   text-decoration: none;
   border: none;
   background: none;
   cursor: pointer;
   margin-left: 10px;
-  background-color: var(--secondary);
-  border-radius: 50%;
-  padding: 5px 10px;
-}
-#brand{
-  color: var(--black);
 }
 .navbar-brand:hover {
   color: var(--goldenYellow);
@@ -111,7 +105,6 @@ nav {
   }
   .navbar-toggler {
     display: block;
-    z-index: 9999;
   }
 
   .navbar-nav {
@@ -120,53 +113,36 @@ nav {
 
 
   .navbar-brand {
-    padding: 5px 10px;
+    padding-right: 200px;
   }
-
-.navbar-closed {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: rgba(0, 0, 0, 1);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  position: absolute;
-  inset: 0 0 0 0;
-  transform: translatex(-100%);
-  transition: transform 550ms ease-out;
-  height: 100%;
-  max-height: 100%;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  z-index: 999; /* Place it above other elements */
-}
-
-.navbar-container ul li {
-  margin: 30px 0;
-}
 
 .navbar-open {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: rgba(0, 0, 0, 1);
+  border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   position: absolute;
-  inset: 0 0 0 0;
-  transform: translatex(0%);
-  transition: transform 550ms ease-out;
+  top: 60px;
+  right: 0;
+  left: 0;
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
   height: 100%;
   max-height: 100%;
   text-align: center;
   position: fixed;
   width: 100%;
+
   z-index: 999; /* Place it above other elements */
+}
+
+.navbar-container ul li {
+  margin: 30px 0;
 }
 
 

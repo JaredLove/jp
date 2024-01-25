@@ -1,308 +1,454 @@
-.resume-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  max-height: 100%;
-  margin: 0 auto;
-}
-
-.resume-info h1 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--secondary);
-  margin-bottom: 20px;
-
-}
-
-.resume-line  {
-  width: 1px;
-  height: 100%;
-  background-color: var(--secondary);
-  margin: 0 10px;
-}
-
-.resume-info p {
-  font-size: .9rem;
-  font-weight: 300;
-  color: var(--white);
-  width: 60ch;
-  line-height: 1.3rem;
-}
-
-.skills-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.skills-header-buttons {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.resume-header{
-  display: flex;
-  flex-direction: row;
-}
-
-.resume-header-buttons {
-  display: flex;
-
-}
-.resume-header-buttons button {
-  margin: 0;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: none;
-  background: none;
-  color: var(--white);
-  font-size: .8rem;
-  font-weight: 300;
-  cursor: pointer;
-  text-align: left;
-
-}
-
-.skills-header-buttons button {
-  margin: 0;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: none;
-  background: none;
-  color: var(--white);
-  font-size: .8rem;
-  font-weight: 300;
-  cursor: pointer;
-  text-align: left;
-}
-
-#lines {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  
-}
-
-#lines1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
-#lies1 {
-  height: 1px;
-  width: 4rem;
-  background-color: var(--secondary);
-  margin: 0 10px;
-  transition: all .5s ease-in-out;
-}
-
-#lies1-active {
-  height: 1px;
-  width: 4rem;
-  background-color: var(--white);
-  margin: 0 10px;
-  transition: all .5s ease-in-out;
-}
-
-
-#lies {
-  height: 50px;
-  width: 4px;
-  background-color: var(--secondary);
-  margin: 0 10px;
-  transition: all .5s ease-in-out;
-}
-
-#lies-active {
-  height: 50px;
-  width: 4px;
-  background-color: var(--white);
-  margin: 0 10px;
-  transition: all .5s ease-in-out;
-}
-
-.education-header{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 400px;
-
-}
-
-.skills-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 400px;
-}
-
-.skills-header h2 {
-  font-size: 1.5rem;
-  font-weight: 300;
-  color: var(--white);
-  text-align: center; /* Add this property to center-align the text */
-}
-
-.skills-header p {
-  font-size: 0.8rem;
-  font-weight: 300;
-  color: var(--white);
-  text-align: center; /* Add this property to center-align the text */
-}
-
-.skills-header ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  list-style: none;
-}
-
-.skills-header ul li {
-  text-align: center; /* Add this property to center-align the text */
-  margin-bottom: 10px;
-}
-
-
-
-/* Extra Small Devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  /* Your styles for extra small devices go here */
-  
-  .resume-info h1 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--secondary);
-    margin-bottom: 20px;
-  
+/* Expertise Resume CSS */
+  .borderInfo1 {
+    background: rgba(142, 138, 138, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 50px;
+    width: 400px;
+    height: 500px;
+    margin: 0 50px;
+    text-align: center;
   }
-  
-  .resume-info p {
-    font-size: .9rem;
-    font-weight: 300;
-    color: var(--white);
-    width: 40ch;
-    line-height: 1.3rem;
-  }
-  
-  .skills-container {
+
+.resumeInfo {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    flex-direction: column;
+    height: 200vh;
+    max-height: 100%;
+    
   }
-  
-  .skills-header-buttons {
+
+  .resumeInfo h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--secondary);
+    font-size: 8rem;
+    padding-bottom: 40px;
+  }
+
+  .developer-section {
     display: flex;
     flex-direction: row;
+  }
+
+  .developer-section h3 {
+    color: var(--white);
+    padding-top: 20px;
+  }
+
+  ol {
+  
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0;
+  
+  }
+
+  
+  ol li {
+    text-align: left;
+    list-style-type: none;
+    margin: 10px 0; /* Add spacing between list items if desired */
+  }
+
+  ol li p {
+display: flex;
+justify-content: left;
+align-items: center;
+    text-align: center;
+    font-size: 25px;
+    width: 11ch;
+    margin: 0 auto;
+    color: var(--textp);
+  }
+
+  .p {
+    margin: 0 2px;
+  }
+
+  .icon {
+    color: var(--goldenYellow);
+    font-size: 50px;
+  }
+
+  .technologies p {
+    color: var(--secondary);
+    padding-top: 50px;
+    font-size: 30px;
+  }
+
+  .btn {
+
+    border: 1px solid var(--lightCharcoal);
+    border-radius: 10px;
+    padding: 10px;
+    background: none;
+    color: var(--primary);
+    font-size: 20px;
+  }
+
+  .btn:hover {
+    background: var(--goldenYellow);
+    transition: all 0.5s ease-in-out;
+    color: var(--black);
+  }
+  
+
+  
+
+
+@media screen and (min-width: 50px ) and (max-width: 499px) {
+  
+  
+  .borderInfo1 {
+    background: rgba(142, 138, 138, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
     width: 100%;
+    height: 100%;
+    margin: 10px 0;
+    text-align: center;
   }
 
-  
-
-  
-  #lines {
+.resumeInfo {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-  }
-  
-  #lines1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-  }
-  #lies1 {
-    height: 1px;
-    width: 4rem;
-    background-color: var(--secondary);
-    margin: 0 10px;
-    transition: all .5s ease-in-out;
-  }
-  
-  #lies1-active {
-    height: 1px;
-    width: 4rem;
-    background-color: var(--white);
-    margin: 0 10px;
-    transition: all .5s ease-in-out;
-  }
-  
-  
-  #lies {
-    height: 4px;
-    width: 3rem;
-    background-color: var(--secondary);
-    margin: 0 5px;
-    transition: all .5s ease-in-out;
-  }
-  
-  #lies-active {
-    height: 4px;
-    width: 3rem;
-    background-color: var(--white);
-    margin: 0 5px;
-    transition: all .5s ease-in-out;
-  }
-  
-
-
-  
-  .skills-header h2 {
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: var(--white);
-    text-align: center; /* Add this property to center-align the text */
-  }
-  
-  .skills-header p {
-    font-size: 0.8rem;
-    font-weight: 300;
-    color: var(--white);
-    text-align: center; /* Add this property to center-align the text */
-  }
-  
-  .skills-header ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%; 
+  }
+
+  .resumeInfo h2 {
+    color: var(--white);
+    font-size: 30px;
+  }
+
+  .developer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .developer-section h3 {
+    color: var(--white);
+    padding-top: 30px;
+  }
+
+    ol {
+      display: flex;
+      flex-direction: column;
+
+      padding: 0;
+    }
+  
+  ol li {
+    list-style-type: none;
+    color: var(--textp);
+    font-size: 20px;
+    padding: 0;
+    display: block;
+  }
+
+  ol li p {
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .icon {
+    color: var(--goldenYellow);
+    font-size: 30px;
+  }
+
+  .technologies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .technologies p {
+    color: var(--textp);
+    font-size: 20px;
+    width: 20ch;
+  }
+
+  .technologies p button.bn30 {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 500px ) and (max-width: 800px) {
+  .borderInfo1 {
+    background: rgba(142, 138, 138, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 60px;
     width: 100%;
-    list-style: none;
+    height: 100%;
+    margin: 10px 0;
+    text-align: center;
   }
-  
-  .skills-header ul li {
-    text-align: center; /* Add this property to center-align the text */
-    margin-bottom: 10px;
+
+.resumeInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%; 
   }
+
+  .resumeInfo h2 {
+    color: var(--white);
+    font-size: 30px;
+  }
+
+  .developer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .developer-section h3 {
+    color: var(--white);
+    padding-top: 30px;
+  }
+
+    ol {
+      display: flex;
+      flex-direction: column;
+
+      padding: 0;
+    }
   
+  ol li {
+    list-style-type: none;
+    color: var(--textp);
+    font-size: 20px;
+    padding: 0;
+    display: block;
+  }
+
+  ol li p {
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .icon {
+    color: var(--goldenYellow);
+    font-size: 30px;
+  }
+
+  .technologies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .technologies p {
+    color: var(--header);
+    font-size: 25px;
+    width: 20ch;
+  }
+
+  .technologies p button.bn30 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+
+  .borderInfo1 {
+    background: rgba(142, 138, 138, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+.resumeInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%; 
+  }
+
+  .resumeInfo h2 {
+    color: var(--white);
+    font-size: 30px;
+  }
+
+  .developer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .developer-section h3 {
+    color: var(--white);
+    padding-top: 30px;
+  }
+
+    ol {
+      display: flex;
+      flex-direction: column;
+
+      padding: 0;
+    }
   
+  ol li {
+    list-style-type: none;
+    color: var(--textp);
+    font-size: 20px;
+    padding: 0;
+    display: block;
+  }
+
+  ol li p {
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .icon {
+    color: var(--goldenYellow);
+    font-size: 30px;
+  }
+
+  .technologies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .technologies p {
+    color: var(--header);
+    font-size: 20px;
+    width: 20ch;
+  }
+
+  .technologies p button.bn30 {
+    margin-top: 10px;
+    font-size: 15px;
+  }
 }
 
-/* Small Devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-  /* Your styles for small devices go here */
-}
+@media screen and (min-width: 1001px) and (max-width: 1482px)  {
 
-/* Medium Devices (landscape tablets and small desktops, 769px and up) */
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-  /* Your styles for medium devices go here */
-}
+  .borderInfo1 {
+    background: rgba(142, 138, 138, 0.26);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 50px;
+    width: 280px;
+    height: 500px;
+    margin: 10px 20px;
+    text-align: center;
+  }
 
-/* Large Devices (desktops, 993px and up) */
-@media only screen and (min-width: 993px) {
-  /* Your styles for large devices go here */
+.resumeInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%; 
+  }
+
+  .resumeInfo h2 {
+    color: var(--white);
+    font-size: 30px;
+  }
+
+  .developer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .developer-section h3 {
+    color: var(--white);
+    padding-top: 30px;
+  }
+
+    ol {
+      display: flex;
+      flex-direction: column;
+
+      padding: 0;
+    }
+  
+  ol li {
+    list-style-type: none;
+    color: var(--textp);
+    font-size: 20px;
+    padding: 0;
+    display: block;
+  }
+
+  ol li p {
+    text-align: left;
+    font-size: 15px;
+  }
+
+  .icon {
+    color: var(--goldenYellow);
+    font-size: 30px;
+  }
+
+  .technologies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .technologies p {
+    color: var(--header);
+    font-size: 20px;
+    width: 20ch;
+  }
+
+  .technologies p button.bn30 {
+    margin-top: 10px;
+    font-size: 15px;
+  }
 }
