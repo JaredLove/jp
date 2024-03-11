@@ -1,7 +1,9 @@
-header {
+ header {
   width: 100%;
   text-align: center;  
   height: 70px;
+  max-width: var(--width);
+  margin: 0 auto;
 }
 
 nav {
@@ -9,8 +11,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 100%;
-  padding: 0 20px;
   width: 100%;
+
 }
 
 
@@ -21,6 +23,7 @@ nav {
   font-size: 20px;
   margin-right: 25px;
   margin-left: 25px;
+
 }
 
 .navbar-nav {
@@ -28,6 +31,7 @@ nav {
   flex-direction: row;
   margin-right: 40px;
   padding-top: 10px;
+
 }
 
 .navbar-nav li {
@@ -101,10 +105,12 @@ nav {
 
 @media (max-width: 767px) {
   header {
-    width: 100%;
+    width: 100%; 
+    overflow: hidden;  
   }
   .navbar-toggler {
     display: block;
+    z-index: 999;
   }
 
   .navbar-nav {
@@ -112,22 +118,19 @@ nav {
   }
 
 
-  .navbar-brand {
-    padding-right: 200px;
-  }
 
 .navbar-open {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgba(0, 0, 0, 1);
-  border-radius: 16px;
+  background: rgba(0, 0, 0, .8);
+  border-radius: 0;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   position: absolute;
-  top: 60px;
+  top: 0;
   right: 0;
   left: 0;
   transform: translateY(0);
@@ -137,8 +140,7 @@ nav {
   text-align: center;
   position: fixed;
   width: 100%;
-
-  z-index: 999; /* Place it above other elements */
+  z-index: 6; /* Place it above other elements */
 }
 
 .navbar-container ul li {

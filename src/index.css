@@ -6,8 +6,13 @@
 }
 
 :root {
-  --primary:  #D2B48C;
-  --secondary: #b7ab98;
+  --background: #0c0c0c;
+  --primary:  #d6d6d6;
+  --secondary: #858684;
+  --tertiary: #9DBFEC;
+  --quaternary: #1F1A1F;
+  --rgba: rgba(195, 167, 232, 0.2);
+  --rgbaa: rgba(0, 0, 0, 0.7);
   --header:  #292828;
   --textp: #b7ab98;
   --white: #ecedee;
@@ -17,37 +22,18 @@
   --lightCharcoal:  #777777;
   --darkSkyBlue:  #324ecf;
   --test: #363636;
+  --width: 1300px;
 }
 
-
-
-.hero {
-  /* Photo by <a href="https://unsplash.com/@estherrj?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Esther Jiao</a> on <a href="https://unsplash.com/photos/3HqSeexXYpQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
-  /* background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)),  url("./assets/images/arts.jpg");
-  height: 100vh;
-  width: 100%;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  backdrop-filter: blur(200px);
-  -webkit-backdrop-filter: blur(200px); */
- } 
 
 html {
-  width: 100%;
-  height: 100%;
   scroll-behavior: smooth;
-  background-color: var(--header);
-}
-
-
-.cover-box{
+  background-color: var(--background);
   height: 100%;
   width: 100%;
-  background-size: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
 }
-
 
 body {
   margin: 0;
@@ -57,13 +43,35 @@ body {
   font-weight: 600;
   line-height: 1.1;
   font-size: 18px;
-  letter-spacing: -.025em;
+  letter-spacing: -.015em;
   scroll-behavior: smooth;
   font-family: Open Sauce,arial,sans-serif;
+  color: var(--primary);
+  background-color: var(--background);
+  overflow-x: hidden;
+  transition: var(--transition);
 }
 
+
 h1,h2,h3,h4 {
-  color: var(--header);
+  color: var(--primary);
+}
+button {
+  font-family: Open Sauce,arial,sans-serif;
+  font-size: .7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  padding: 1rem 3rem;
+  border: 2px solid var(--white);
+  background-color: none;
+  background: transparent;
+  color: var(--white);
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-block;
+  outline: none;
+  z-index: 1;
 }
 
 
@@ -72,863 +80,375 @@ button:hover {
 }
 
 a {
-  
+  font-size: inherit;
   text-decoration: none;
   transition: var(--transition);
   color: inherit;
 
 }
 
+a.Active {
+  color: var(--tertiary);
+  transition: var(--transition);
+}
+
+h1 {
+  font-family: Avant Garde,sans-serif;
+  font-size: 2.5rem;
+  color: var(--primary);
+  z-index: 2;
+}
+
+h2{
+  font-family: Avant Garde,sans-serif;
+  font-size: 4rem;
+  color: var(--primary);
+  z-index: 2;
+  margin-bottom: 2%;
+}
+h3{
+  font-size: 2rem;  
+  color: var(--tertiary);
+}
+
+h4, h5, h6 {
+  font-family: Avant Garde,sans-serif;
+  font-size: 2rem;
+  color: var(--primary);
+  z-index: 2;
+}
+
+p{
+  font-family: Avant Garde,sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--primary);
+  width: 100%;
+  max-width: 60ch;
+  font-size: 1.5rem;
+  letter-spacing: -.025em;
+  line-height: 1.2;
+  z-index: 2;
+}
+
+.header-one {
+  position: absolute;
+  transform: rotate(-90deg);
+  opacity: 0.2;
+  left: -350px;
+  z-index: 2;
+  overflow: hidden;
+  }
+
+  .header-one h2 {
+    color: var(--tertiary) !important;
+    font-size: 10rem !important;
+    font-weight: 600;  
+  }
+
+  .header-two {
+  position: absolute;
+  transform: rotate(-90deg);
+  opacity: 0.2;
+  right: -350px;
+  z-index: 2;
+  overflow: hidden;
+  }
+
+  .header-two h2 {
+    color: var(--tertiary) !important;
+    font-size: 10rem !important;
+    font-weight: 600;
+  }
+
+  .header-two div {
+    overflow: hidden;
+  }
+
+
 
 
 
  /* Home section css */
-.home-section-container {
+ .home-section-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
-   height: 100vh;
-   max-height: 100%;
-  line-height: .9;
+  align-items: center;
+  height: 80vh;
+  max-width: var(--width);
+  margin: 0 auto;
+  z-index: 2;
   overflow: hidden;
  }
 
- .full-stack-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
- }
- .full-stack {
-    display: flex;
-    flex-direction: row;
-
-
- }
-
- .full-stack h2 {
-   font-family: 'Bebas Neue', sans-serif;
-  color: var(--secondary);
-  letter-spacing: .01em;
-  font-size: 22rem;
-padding: 0 47px;
- }
-
- .web-dev-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
- }
- .web-dev {
-    display: flex;
+ .home-header {
+   display: flex;
     flex-direction: row;
  }
 
- .web-dev h2 {
-   font-family: 'Bebas Neue', sans-serif;
-  color: var(--secondary);
-  letter-spacing: .01em;
-  font-size: 20rem;
-  margin: 0 10px
- }
- .web-dev p {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 2.6rem;
-  width: 20ch;
-  color: var(--goldenYellow);
-  letter-spacing: -.01em;
-  text-align: left;
-  padding-top: 34px;
+ .home-header-content {
+   margin-left: 10px;
+   display: flex;
+   flex-direction: column;
  }
 
- .web-dev-p {
-  padding-left: 20px;
-  padding-top: 10px;
+ .home-header-content h1 {
+    font-size: 5rem;
+    z-index: 3;
  }
-
- .web-dev h3{
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 2.6rem;
-  width: 12ch;
-  color: var(--goldenYellow);
-  letter-spacing: -.025em;
-  font-weight: 600;
-  padding-bottom: 19px;
-  text-align: left;
+ 
+ .home-header-content h3{
+    font-size: 3rem;
+    z-index: 3;
  }
-
- #tags {
-  letter-spacing: -.03em;
+ .home-header-content p{
+    font-size: 2.5rem;
+    width: 100%;
+    max-width: 60ch;
+    z-index: 3;
  }
+   .head-section{
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: center;
+      margin: 5% 0;
+      cursor: pointer;
+   }
 
- .hover-header:hover {
-  color: var(--goldenYellow);
-  transition: all 0.5s ease-in-out;
- }
+   .home-mid {
+   }
+
+   .home-mid ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+   }
+
+    .home-mid ul li {
+        list-style: none;
+        margin: 3rem 6rem 0 0;
+    }
+
+   .head-end {
+      display: flex;
+      justify-content: left;
+   }
 
 
- .lottie-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-   height: 30px;
-   width: 30px;
-   margin-left: auto;
-   margin-right: auto;
- }
+   .head-end ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: flex-start;
+      z-index: 2;
+   }
 
+   .head-end ul li {
+      list-style: none;
+      margin: 20px 20px 0 0;
+   }
 
+   .head-end ul li a {
+      color: var(--primary);
+      font-size: 2.5rem;
+      transition: var(--transition);
+   }
+   .head-end ul li a:hover {
+      color: var(--tertiary);
+   }
 
+   .color-change{
+    color: var(--tertiary);
+   }
+   .home-header-image{ 
+
+      z-index: 2;
+   }
+   .img-me {
+      width: 500px;
+      height: 600px;
+   
+   }
 
 
  /* Home section css end */
 
- @media screen and (min-width: 50px ) and (max-width: 399px) {
+ @media screen and (max-width: 768px){
 
-   
-  .home-section-container {
+  .home-section-container{
+    height: 100vh;
+    max-height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("./assets/imagesOfMe/nature.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    width: 100%;
-     height: 70vh;
-     max-height: 100%;
-    line-height: .9;
    }
-  
-   .full-stack-container {
+  .home-header {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+     flex-direction: column;
+     margin-top: 10%;
+  }
+    .home-header-image{ 
+      display: none;
    }
-   .full-stack {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-  
+   .img-me {
+    display: none;
    }
-  
-   .full-stack h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    color: var(--secondary);
-    letter-spacing: .01em;
-    font-size: 5.1rem;
-    padding: 0;
-   }
-  
-   .web-dev-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-   }
-   .web-dev {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  
-   }
-  
-   .web-dev h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    color: var(--secondary);
-    letter-spacing: .01em;
-    font-size: 5.1rem;
-    margin: 0 10px
-   }
-   .web-dev p {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.5rem;
-    width: 25ch;
-    color: var(--goldenYellow);
-    letter-spacing: -.01em;
-    text-align: center;
-    padding-top: 0;
-    line-height: 1.1;
-   }
-  
-   .web-dev-p {
-    padding-left: 0px;
-    padding-top: 0px;
-   }
-  
-   .web-dev h3{
-    font-family: 'Bebas Neue', sans-serif;
+   .home-header-content h1 {
     font-size: 3rem;
-    width: 12ch;
-    color: var(--goldenYellow);
-    letter-spacing: -.01em;
-    font-weight: 600;
-    padding-bottom: 0px;
-    text-align: center;
-   }
-  
-   #tags {
-display: none;
-   }
-  
-   .hover-header:hover {
-    color: var(--goldenYellow);
-    transition: all 0.5s ease-in-out;
-   }
-  
-  
-   .lottie-container {
-    padding-top: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-   }
+    z-index: 3;
+ }
+ 
+ .home-header-content h3{
+    font-size: 2rem;
+    z-index: 3;
+ }
+ .home-header-content p{
+    font-size: 1.5rem;
+    width: 100%;
+    max-width: 60ch;
+    z-index: 3;
  }
 
+ .header-one {
+  position: static;
+  transform: none;
+  opacity: 0.6;
+  left: 0;
+  z-index: 2;
+  overflow: hidden;
+  }
+
+  .header-one h2 {
+    color: var(--tertiary) !important;
+    font-size: 2rem !important;
+    font-weight: 600;  
+  }
+
+  .header-two {
+    position: static;
+    transform: none;
+    opacity: 0.6;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  .header-two h2 {
+    color: var(--tertiary) !important;
+    font-size: 2rem !important;
+    font-weight: 600;  
+  }
 
 
-   @media screen and (min-width: 400px ) and (max-width: 650px) {
-      
-      
-  .home-section-container {
+ }
+
+ @media screen and (max-width: 1200px){
+
+  .home-section-container{
+    height: 100vh;
+    max-height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("./assets/imagesOfMe/nature.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    width: 100%;
-     height: 70vh;
-     max-height: 100%;
-    line-height: .9;
    }
-  
-   .full-stack-container {
+  .home-header {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+     flex-direction: column;
+    margin: 10% auto;
+  }
+    .home-header-image{ 
+      display: none;
    }
-   .full-stack {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-  
+   .img-me {
+    display: none;
    }
-  
-   .full-stack h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    color: var(--secondary);
-    letter-spacing: .01em;
-    font-size: 5.1rem;
-   padding: 0 3px;
-   }
-  
-   .web-dev-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-   }
-   .web-dev {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  
-   }
-  
-   .web-dev h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    color: var(--secondary);
-    letter-spacing: .01em;
-    font-size: 5.1rem;
-    margin: 0 10px
-   }
-   .web-dev p {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.5rem;
-    width: 25ch;
-    color: var(--goldenYellow);
-    letter-spacing: -.01em;
-    text-align: center;
-    padding-top: 0;
-    line-height: 1.1;
-   }
-  
-   .web-dev-p {
-    padding-left: 0px;
-    padding-top: 0px;
-   }
-  
-   .web-dev h3{
-    font-family: 'Bebas Neue', sans-serif;
+   .home-header-content h1 {
     font-size: 3rem;
-    width: 12ch;
-    color: var(--goldenYellow);
-    letter-spacing: -.01em;
-    font-weight: 600;
-    padding-bottom: 0px;
-    text-align: center;
-   }
+    z-index: 3;
+ }
+ 
+ .home-header-content h3{
+    font-size: 2rem;
+    z-index: 3;
+ }
+ .home-header-content p{
+    font-size: 1.5rem;
+    width: 100%;
+    max-width: 45ch;
+    z-index: 3;
+ }
+
+ .header-one {
+  position: static;
+  transform: none;
+  opacity: 0.6;
+  left: 0;
+  z-index: 2;
+  overflow: hidden;
+  }
+
+  .header-one h2 {
+    color: var(--tertiary) !important;
+    font-size: 2rem !important;
+    font-weight: 600;  
+  }
+
+  .header-two {
+    position: static;
+    transform: none;
+    opacity: 0.6;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  .header-two h2 {
+    color: var(--tertiary) !important;
+    font-size: 2rem !important;
+    font-weight: 600;  
+  }
+ }
+
+ @media screen and (max-width: 1599px){
+  .header-one {
+    position: static;
+    transform: none;
+    opacity: 0.6;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+    }
   
-   #tags {
-display: none;
-   }
+    .header-one h2 {
+      color: var(--tertiary) !important;
+      font-size: 2rem !important;
+      font-weight: 600;  
+    }
   
-   .hover-header:hover {
-    color: var(--goldenYellow);
-    transition: all 0.5s ease-in-out;
-   }
+    .header-two {
+      position: static;
+      transform: none;
+      opacity: 0.6;
+      left: 0;
+      z-index: 2;
+      overflow: hidden;
+    }
   
-  
-   .lottie-container {
-    padding-top: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-   }
-       }
-
-       @media screen and (min-width: 651px ) and (max-width: 700px) {
-      
-      
-        .home-section-container {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-           height: 70vh;
-           max-height: 100%;
-          line-height: .9;
-         }
-        
-         .full-stack-container {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-         }
-         .full-stack {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        
-         }
-        
-         .full-stack h2 {
-          font-family: 'Bebas Neue', sans-serif;
-          color: var(--secondary);
-          letter-spacing: .01em;
-          font-size: 7rem;
-            padding: 0 30px;
-         }
-        
-         .web-dev-container {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-         }
-         .web-dev {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        
-         }
-        
-         .web-dev h2 {
-          font-family: 'Bebas Neue', sans-serif;
-          color: var(--secondary);
-          letter-spacing: .01em;
-          font-size: 6rem;
-          margin: 0 10px
-         }
-         .web-dev p {
-          font-family: 'Bebas Neue', sans-serif;
-          font-size: 1.2rem;
-          width: 25ch;
-          color: var(--goldenYellow);
-          letter-spacing: -.01em;
-          text-align: left;
-          padding-top: 0;
-          line-height: 1.1;
-         }
-        
-         .web-dev-p {
-          padding-left: 0px;
-          padding-top: 0px;
-         }
-        
-         .web-dev h3{
-          font-family: 'Bebas Neue', sans-serif;
-          font-size: 1.2rem;
-          width: 12ch;
-          color: var(--goldenYellow);
-          letter-spacing: -.01em;
-          font-weight: 600;
-          padding-bottom: 0px;
-          text-align: left;
-         }
-        
-         #tags {
-          display: block;
-         }
-        
-         .hover-header:hover {
-          color: var(--goldenYellow);
-          transition: all 0.5s ease-in-out;
-         }
-        
-        
-         .lottie-container {
-          padding-top: 50px;
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          width: 20px;
-          height: 20px;
-         }
-             }
-
-             
-       @media screen and (min-width: 701px ) and (max-width: 900px) {
-      
-      
-        .home-section-container {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-           height: 70vh;
-           max-height: 100%;
-          line-height: .9;
-          overflow: hidden;
-         }
-        
-         .full-stack-container {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-         }
-         .full-stack {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        
-         }
-        
-         .full-stack h2 {
-          font-family: 'Bebas Neue', sans-serif;
-          color: var(--secondary);
-          letter-spacing: .01em;
-          font-size: 8.5rem;
-            padding: 0 48px;
-         }
-        
-         .web-dev-container {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-         }
-         .web-dev {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        
-         }
-        
-         .web-dev h2 {
-          font-family: 'Bebas Neue', sans-serif;
-          color: var(--secondary);
-          letter-spacing: .01em;
-          font-size: 8rem;
-          margin: 0 10px
-         }
-         .web-dev p {
-          font-family: 'Bebas Neue', sans-serif;
-          font-size: 1.5rem;
-          width: 25ch;
-          color: var(--goldenYellow);
-          letter-spacing: -.01em;
-          text-align: left;
-          padding-top: 0;
-          line-height: 1.1;
-         }
-        
-         .web-dev-p {
-          padding-left: 0px;
-          padding-top: 0px;
-         }
-        
-         .web-dev h3{
-          font-family: 'Bebas Neue', sans-serif;
-          font-size: 1.5rem;
-          width: 12ch;
-          color: var(--goldenYellow);
-          letter-spacing: -.01em;
-          font-weight: 600;
-          padding-bottom: 0px;
-          text-align: left;
-         }
-        
-         #tags {
-          display: block;
-         }
-        
-         .hover-header:hover {
-          color: var(--goldenYellow);
-          transition: all 0.5s ease-in-out;
-         }
-        
-        
-         .lottie-container {
-          padding-top: 50px;
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          width: 20px;
-          height: 20px;
-         }
-             }
-
-
-             
-             
-       @media screen and (min-width: 901px ) and (max-width: 1100px) {
-      
-      
-        .home-section-container {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-           height: 70vh;
-           max-height: 100%;
-          line-height: .9;
-         }
-        
-         .full-stack-container {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-         }
-         .full-stack {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        
-         }
-        
-         .full-stack h2 {
-          font-family: 'Bebas Neue', sans-serif;
-          color: var(--secondary);
-          letter-spacing: .01em;
-          font-size: 10rem;
-          padding: 0 25px;
-         }
-        
-         .web-dev-container {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-         }
-         .web-dev {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        
-         }
-        
-         .web-dev h2 {
-          font-family: 'Bebas Neue', sans-serif;
-          color: var(--secondary);
-          letter-spacing: .01em;
-          font-size: 8rem;
-          margin: 0 10px
-         }
-         .web-dev p {
-          font-family: 'Bebas Neue', sans-serif;
-          font-size: 1.5rem;
-          width: 25ch;
-          color: var(--goldenYellow);
-          letter-spacing: -.01em;
-          text-align: left;
-          padding-top: 0;
-          line-height: 1.1;
-         }
-        
-         .web-dev-p {
-          padding-left: 0px;
-          padding-top: 0px;
-         }
-        
-         .web-dev h3{
-          font-family: 'Bebas Neue', sans-serif;
-          font-size: 1.5rem;
-          width: 12ch;
-          color: var(--goldenYellow);
-          letter-spacing: -.01em;
-          font-weight: 600;
-          padding-bottom: 0px;
-          text-align: left;
-         }
-        
-         #tags {
-          display: block;
-         }
-        
-         .hover-header:hover {
-          color: var(--goldenYellow);
-          transition: all 0.5s ease-in-out;
-         }
-        
-        
-         .lottie-container {
-          padding-top: 50px;
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          width: 20px;
-          height: 20px;
-         }
-             }
-
-             
-             
-       @media screen and (min-width: 1101px ) and (max-width: 1300px) {
-      
-      
-         .home-section-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-             height: 70vh;
-             max-height: 100%;
-            line-height: .9;
-           }
-          
-           .full-stack-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-           }
-           .full-stack {
-              display: flex;
-              flex-direction: row;
-              justify-content: center;
-              align-items: center;
-          
-           }
-          
-           .full-stack h2 {
-            font-family: 'Bebas Neue', sans-serif;
-            color: var(--secondary);
-            letter-spacing: .01em;
-            font-size: 10rem;
-            padding: 0 25px;
-           }
-          
-           .web-dev-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-           }
-           .web-dev {
-              display: flex;
-              flex-direction: row;
-              justify-content: center;
-              align-items: center;
-          
-           }
-          
-           .web-dev h2 {
-            font-family: 'Bebas Neue', sans-serif;
-            color: var(--secondary);
-            letter-spacing: .01em;
-            font-size: 8rem;
-            margin: 0 10px
-           }
-           .web-dev p {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 1.5rem;
-            width: 25ch;
-            color: var(--goldenYellow);
-            letter-spacing: -.01em;
-            text-align: left;
-            padding-top: 0;
-            line-height: 1.1;
-           }
-          
-           .web-dev-p {
-            padding-left: 0px;
-            padding-top: 0px;
-           }
-          
-           .web-dev h3{
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 1.5rem;
-            width: 12ch;
-            color: var(--goldenYellow);
-            letter-spacing: -.01em;
-            font-weight: 600;
-            padding-bottom: 0px;
-            text-align: left;
-           }
-          
-           #tags {
-            display: block;
-           }
-          
-           .hover-header:hover {
-            color: var(--goldenYellow);
-            transition: all 0.5s ease-in-out;
-           }
-          
-          
-           .lottie-container {
-            padding-top: 50px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            width: 20px;
-            height: 20px;
-           }
-             }
-
-
-
-
-@media screen and (min-width: 1301px) and (max-width: 1750px) {
-   .home-section-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-       height: 70vh;
-       max-height: 100%;
-      line-height: .9;
-      margin-top: 50px;
-     }
-    
-     .full-stack-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-     }
-     .full-stack {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    
-     }
-    
-     .full-stack h2 {
-      font-family: 'Bebas Neue', sans-serif;
-      color: var(--secondary);
-      letter-spacing: .01em;
-      font-size: 18rem;
-   padding: 0 55px;
-     }
-    
-     .web-dev-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-     }
-     .web-dev {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    
-     }
-    
-     .web-dev h2 {
-      font-family: 'Bebas Neue', sans-serif;
-      color: var(--secondary);
-      letter-spacing: .01em;
-      font-size: 17rem;
-      margin: 0 10px
-     }
-     .web-dev p {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 2rem;
-      width: 25ch;
-      color: var(--goldenYellow);
-      letter-spacing: -.01em;
-      text-align: left;
-      padding-top: 0;
-      line-height: 1.1;
-     }
-    
-     .web-dev-p {
-      padding-left: 0px;
-      padding-top: 0px;
-     }
-    
-     .web-dev h3{
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 2rem;
-      width: 12ch;
-      color: var(--goldenYellow);
-      letter-spacing: -.01em;
-      font-weight: 600;
-      padding-bottom: 48px;
-      text-align: left;
-     }
-    
-     #tags {
-      display: block;
-     }
-    
-     .hover-header:hover {
-      color: var(--goldenYellow);
-      transition: all 0.5s ease-in-out;
-     }
-    
-    
-     .lottie-container {
-      padding-top: 50px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 50px;
-      height: 50px;
-     }
-  
-}
+    .header-two h2 {
+      color: var(--tertiary) !important;
+      font-size: 2rem !important;
+      font-weight: 600;  
+    }
+ }

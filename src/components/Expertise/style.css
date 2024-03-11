@@ -1,454 +1,120 @@
-/* Expertise Resume CSS */
-  .borderInfo1 {
-    background: rgba(142, 138, 138, 0.26);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 50px;
-    width: 400px;
-    height: 500px;
-    margin: 0 50px;
-    text-align: center;
-  }
-
-.resumeInfo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 200vh;
-    max-height: 100%;
-    
-  }
-
-  .resumeInfo h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    color: var(--secondary);
-    font-size: 8rem;
-    padding-bottom: 40px;
-  }
-
-  .developer-section {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .developer-section h3 {
-    color: var(--white);
-    padding-top: 20px;
-  }
-
-  ol {
-  
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      padding: 0;
-  
-  }
-
-  
-  ol li {
-    text-align: left;
-    list-style-type: none;
-    margin: 10px 0; /* Add spacing between list items if desired */
-  }
-
-  ol li p {
-display: flex;
-justify-content: left;
-align-items: center;
-    text-align: center;
-    font-size: 25px;
-    width: 11ch;
-    margin: 0 auto;
-    color: var(--textp);
-  }
-
-  .p {
-    margin: 0 2px;
-  }
-
-  .icon {
-    color: var(--goldenYellow);
-    font-size: 50px;
-  }
-
-  .technologies p {
-    color: var(--secondary);
-    padding-top: 50px;
-    font-size: 30px;
-  }
-
-  .btn {
-
-    border: 1px solid var(--lightCharcoal);
-    border-radius: 10px;
-    padding: 10px;
-    background: none;
-    color: var(--primary);
-    font-size: 20px;
-  }
-
-  .btn:hover {
-    background: var(--goldenYellow);
-    transition: all 0.5s ease-in-out;
-    color: var(--black);
-  }
-  
-
-  
-
-
-@media screen and (min-width: 50px ) and (max-width: 499px) {
-  
-  
-  .borderInfo1 {
-    background: rgba(142, 138, 138, 0.26);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-    margin: 10px 0;
-    text-align: center;
-  }
-
-.resumeInfo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    max-height: 100%;
-    max-width: 100%; 
-  }
-
-  .resumeInfo h2 {
-    color: var(--white);
-    font-size: 30px;
-  }
-
-  .developer-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .developer-section h3 {
-    color: var(--white);
-    padding-top: 30px;
-  }
-
-    ol {
-      display: flex;
-      flex-direction: column;
-
-      padding: 0;
-    }
-  
-  ol li {
-    list-style-type: none;
-    color: var(--textp);
-    font-size: 20px;
-    padding: 0;
-    display: block;
-  }
-
-  ol li p {
-    text-align: left;
-    font-size: 15px;
-  }
-
-  .icon {
-    color: var(--goldenYellow);
-    font-size: 30px;
-  }
-
-  .technologies {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .technologies p {
-    color: var(--textp);
-    font-size: 20px;
-    width: 20ch;
-  }
-
-  .technologies p button.bn30 {
-    margin-top: 10px;
-    font-size: 15px;
-  }
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  height: 100vh;
+  max-height: 100%;
+  width: 100%;
+  max-width: var(--width);
+  overflow: hidden;
+  z-index: 2;
+  transition: var(--transition);
 }
 
-@media screen and (min-width: 500px ) and (max-width: 800px) {
-  .borderInfo1 {
-    background: rgba(142, 138, 138, 0.26);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 60px;
-    width: 100%;
-    height: 100%;
-    margin: 10px 0;
-    text-align: center;
-  }
+.resume-container h3 {
+  text-align: left;
+  color: var(--primary);
+  font-size: 3.6rem;
+  margin: 50px 0;
+}
 
-.resumeInfo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    max-height: 100%;
-    max-width: 100%; 
-  }
+.resume-container ul li p {
+  width: 100%;
+  font-size: 1.2rem;
+  color: var(--primary);
+  text-align: left;
 
-  .resumeInfo h2 {
-    color: var(--white);
-    font-size: 30px;
-  }
-
-  .developer-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .developer-section h3 {
-    color: var(--white);
-    padding-top: 30px;
-  }
-
-    ol {
-      display: flex;
-      flex-direction: column;
-
-      padding: 0;
-    }
-  
-  ol li {
-    list-style-type: none;
-    color: var(--textp);
-    font-size: 20px;
-    padding: 0;
-    display: block;
-  }
-
-  ol li p {
-    text-align: left;
-    font-size: 15px;
-  }
-
-  .icon {
-    color: var(--goldenYellow);
-    font-size: 30px;
-  }
-
-  .technologies {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .technologies p {
-    color: var(--header);
-    font-size: 25px;
-    width: 20ch;
-  }
-
-  .technologies p button.bn30 {
-    margin-top: 10px;
-    font-size: 20px;
-  }
 }
 
 
-@media screen and (min-width: 801px) and (max-width: 1000px) {
+.resume-container ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
 
-  .borderInfo1 {
-    background: rgba(142, 138, 138, 0.26);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-    margin: 10px 0;
-    text-align: center;
-  }
-
-.resumeInfo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    max-height: 100%;
-    max-width: 100%; 
-  }
-
-  .resumeInfo h2 {
-    color: var(--white);
-    font-size: 30px;
-  }
-
-  .developer-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .developer-section h3 {
-    color: var(--white);
-    padding-top: 30px;
-  }
-
-    ol {
-      display: flex;
-      flex-direction: column;
-
-      padding: 0;
-    }
-  
-  ol li {
-    list-style-type: none;
-    color: var(--textp);
-    font-size: 20px;
-    padding: 0;
-    display: block;
-  }
-
-  ol li p {
-    text-align: left;
-    font-size: 15px;
-  }
-
-  .icon {
-    color: var(--goldenYellow);
-    font-size: 30px;
-  }
-
-  .technologies {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .technologies p {
-    color: var(--header);
-    font-size: 20px;
-    width: 20ch;
-  }
-
-  .technologies p button.bn30 {
-    margin-top: 10px;
-    font-size: 15px;
-  }
 }
 
-@media screen and (min-width: 1001px) and (max-width: 1482px)  {
+.resume-container li {
+  margin:  0 10px;
+  border: 2px solid #000000;
+  padding: 4rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: var(--quaternary);
+  transition: var(--transition);
+}
 
-  .borderInfo1 {
-    background: rgba(142, 138, 138, 0.26);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 50px;
-    width: 280px;
-    height: 500px;
-    margin: 10px 20px;
-    text-align: center;
-  }
+.service-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
-.resumeInfo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.icon-res{
+  font-size: 3rem;
+  color: var(--tertiary);
+  margin: 0 10px;
+}
+
+.num-icon {
+  font-size: 3rem;
+  color: var(--primary);
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 768px){
+  .resume-container {
     height: 100%;
-    max-height: 100%;
-    max-width: 100%; 
+    margin: 10% 0;
+    width: 95%;
   }
-
-  .resumeInfo h2 {
-    color: var(--white);
-    font-size: 30px;
-  }
-
-  .developer-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .developer-section h3 {
-    color: var(--white);
-    padding-top: 30px;
-  }
-
-    ol {
-      display: flex;
-      flex-direction: column;
-
-      padding: 0;
-    }
-  
-  ol li {
-    list-style-type: none;
-    color: var(--textp);
-    font-size: 20px;
-    padding: 0;
-    display: block;
-  }
-
-  ol li p {
-    text-align: left;
-    font-size: 15px;
-  }
-
-  .icon {
-    color: var(--goldenYellow);
-    font-size: 30px;
-  }
-
-  .technologies {
-    display: flex;
+  .resume-container ul {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
   }
 
-  .technologies p {
-    color: var(--header);
-    font-size: 20px;
-    width: 20ch;
+  
+.resume-container li {
+  margin:  5% auto;
+  border: 2px solid #000000;
+  padding: 4rem;
+  width: 98%;
+  height: 100%;
+  text-align: center;
+  background-color: var(--quaternary);
+
+}
+.resume-container h3 {
+  font-size: 2rem;
+}
+}
+
+@media screen and (max-width: 1200px){
+
+  .resume-container {
+    height: 100%;
+    margin: 10% auto;
+    width: 95%;
+
+  }
+  .resume-container ul {
+    flex-direction: column;
   }
 
-  .technologies p button.bn30 {
-    margin-top: 10px;
-    font-size: 15px;
-  }
+  
+.resume-container li {
+  margin:  5% auto;
+  border: 2px solid #000000;
+  padding: 4rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: var(--quaternary);
+
+}
 }

@@ -1,40 +1,44 @@
 import React from 'react';
-import Lottie from 'lottie-react';
+import me from "../assets/imagesOfMe/nature.JPG"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 const  Home = () => { 
-
   return (
 
 
 
     <section className="home-section-container">
-      <div className='full-stack-container'>
-        <div className='full-stack'>
-          <h2><span className='hover-header'>F</span><span className='hover-header'>U</span><span className='hover-header'>L</span><span className='hover-header'>L</span></h2>
-          <h2 id='tags' className='hover-header'>-</h2>
-          <h2><span className='hover-header'>S</span><span className='hover-header'>T</span><span className='hover-header'>A</span><span className='hover-header'>C</span><span className='hover-header'>K</span></h2>
-        </div>
-      </div>
-      <div className='web-dev-container'>
-        <div className='web-dev'>
-          <h2><span className='hover-header'>D</span><span className='hover-header'>E</span><span className='hover-header'>V</span><span className='hover-header'>E</span><span className='hover-header'>L</span><span className='hover-header'>O</span><span className='hover-header'>P</span><span className='hover-header'>E</span><span className='hover-header'>R</span></h2>
-        
-          <div className='web-dev-p'>
-                      <h3>Jared Love</h3>
-          <p>Turning ideas into code, one project at a time. Where innovation meets design.</p>
+        <div className='home-header'>
+
+          <div className='home-header-content'>
+              <h1>Jared Love</h1>
+              <h3>Web Developer & IT Specialist</h3>
+              <p>Crafting <span className='color-change'>pixels</span> by day, fixing <span className='color-change'>servers</span> by night—I'm the <span className='color-change'>digital wizard</span> ensuring your clicks cast <span className='color-change'>spells</span> and your systems stay <span className='color-change'>bright.</span></p>
+
+          <div className='head-end'>
+            <ul>
+                <li>
+                  <a href='https://www.linkedin.com/in/jared-love-188479241/' target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faLinkedinIn} /></a>
+                </li>
+                <li>
+                  <a href='https://github.com/JaredLove' target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+                </li>
+                <li>
+                  <a href='https://twitter.com/404Jared' target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faXTwitter} /></a>
+                </li>
+                <li>
+                  <a href="mailto:lovejared91@Yahoo.com" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faEnvelope} /></a>
+                </li>
+            </ul>
+        </div>   
           </div>
-
-        </div>
-      </div>
-
-      <div className='lottie-container'>
-        <div className='lottie'>
-          <Lottie
-            animationData={require('../assets/json/animation_lnwy83t6.json')}
-            loop
-            autoplay
-          />
-        </div>
-      </div>
+          <div className='home-header-image'>
+            <img src={me} alt='me' className='img-me' />
+            </div>
+        </div> 
       </section>
 
 

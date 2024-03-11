@@ -6,8 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
 
 
-//react bootstrap script
-import 'atropos/css';
+
 const basename = document.querySelector('base')?.getAttribute('href') ?? '/'  
 const root = ReactDOM.createRoot(document.getElementById("root"));
 

@@ -1,63 +1,32 @@
-import React, { useEffect } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger'; // Import ScrollTrigger
-import me from '../../assets/imagesOfMe/image3.jpeg';
-import './style.css';
-gsap.registerPlugin(ScrollTrigger);
+import React from 'react';
 
+import './style.css';
 
 
 function About() {
-  useEffect(() => {
-    const paragraphs = document.querySelectorAll('.color-change-paragraph');
-
-    paragraphs.forEach((paragraph) => {
-      const text = paragraph.innerText;
-      paragraph.innerText = '';
-
-      text.split('').forEach((char, index) => {
-        const span = document.createElement('span');
-        span.innerText = char;
-        span.style.color = '#363636';
-        paragraph.appendChild(span);
-
-        gsap.to(span, {
-          color: '#b7ab98',
-          scrollTrigger: {
-            trigger: span,
-            start: 'top 90%',
-            end: 'bottem 50%',
-            scrub: true,
-          },
-          delay: 1 * index, // Delay each character's animation
-          duration: 5,
-        });
-      });
-    });
-  }, []);
+ 
 
   return (
-    <section className='about'>
-      <h2>About Me</h2>
+  <div className='about'>   
+      
       <div className='about-content'>
-    <div className="color-change-paragraph">
-     
-      <p>
-      Hey, I'm Jared, but you can call me Jay. I'm a full stack web developer with a passion for creating and learning.
-      </p>
-      <p>
-      Currently based in San Antonio, Texas and graduated from UTSA as a Full Stack Web Developer.
-      </p>
-      <p>
-      Some of my hobbies are gaming, coffee, and you guessed it, coding! How is coffee a hobby, you may be wondering? Why not, It's fun, delicious, social, and you can spend as little as $5 to get a boost.
-      </p>
+   
+      <div className='header-one'>
+          <h2>ABOUT ME</h2>
+      </div>
+        <p>
+        Hey, I'm Jared, but you can call me Jay. I'm a full stack web developer with a passion for <span className="color-change">creating</span> and <span className="color-change">learning</span>.
+
+
+        Currently based in San Antonio, Texas and graduated from <span className="color-change">UTSA</span> as a <span className="color-change">Full Stack Web Developer</span>.
+
+
+        Some of my hobbies are <span className="color-change">gaming</span>, <span className="color-change">coffee</span>, and you guessed it, <span className="color-change">coding</span>! How is coffee a hobby, you may be wondering? Why not, It's fun, delicious, social, and you can spend as little as $5 to get a <span className="color-change">boost</span>.
+        </p>
+      </div>
 
     </div>
-    <div>
-      <img src={me} alt="me" className="me"/>
-    </div>
-    </div>
-    </section>
+
   );
 };
 

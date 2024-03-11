@@ -4,409 +4,152 @@
       justify-content: center;
       align-items: center;
       width: 100%;
-      height: 130vh;
-      margin-top: 20px;
-      margin-bottom: 50px;
+      height: 100%;
+      max-height: 100%;
+      max-width: var(--width);
+      margin: 0 auto 0 auto;
+      overflow: hidden;
     }
 
-    .work-container h2 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 8rem;
-      color: var(--secondary);
-    }
-    .work {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    
-    }
-
-    hr {
+    .work-bg-container{
+      position: absolute;
       width: 100%;
-      height: 1px;
-      background-color: var(--goldenYellow);
-      border: none;
+      height: 100%;
+      overflow: hidden;
+      z-index: 1;
+    }
+    
+
+    .work-bg {
+      background-color: var(--rgba);
+      position: absolute;
+      width: 200vw;
+      height: 100vh;
+      transform: rotate(140deg);
+      opacity: 1;
+      z-index: 1;
+      overflow: hidden;
     }
 
-    .work p {
-      margin-top: 20px;
-      width: 35ch;
-      color: var(--textp);
-      font-size: 20px;
-      text-align: center;
-
+    .work-content-head {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-
-    .work h1 {
-      font-family: 'bebas neue' ,sans-serif;
-      color: var(--secondary);
-      font-size: 3rem;
-    }
-
     .work-content {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      background: rgba(142, 138, 138, 0.26);
-      border-radius: 16px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(5px);
-      -webkit-backdrop-filter: blur(5px);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      width: 100%;
-      height: 350px;
-    }
-
-    .work-content img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 16px;
-    }
-
-
-
-
-
-
-.workContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-.workContent h3 {
-  font-size: 20px;
-  color: var(--goldenYellow);
-  margin: 0;
-  text-align: left;
-}
-
-.workContent p {
-  font-size: 15px;
-  color: var(--white);
-  margin: 0;
-  text-align: center;
-}
-
-.links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  margin-top: 20px;
-}
-
-.work a {
-  border: 1px solid var(--lightCharcoal);
-  border-radius: 10px;
-  padding: 10px;
-  background: none;
-  color: var(--primary);
-  font-size: 20px;
-  width: 110px;
-  margin: 0 10px;
-  text-align: center;
-}
-
-
-
-
-    
-
-    
-
-
-    @media screen and (min-width: 50px ) and (max-width: 800px){
-      .work-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        margin-top: 100px;
-      }
-  
-      .work-container h2 {
-        font-family: 'Bebas Neue', sans-serif;
-        font-size: 4rem;
-        color: var(--secondary);
-      }
-      .work {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-      
-      }
-  
-      hr {
-        width: 100%;
-        height: 1px;
-        background-color: var(--goldenYellow);
-        border: none;
-      }
-  
-      .work p {
-        margin-top: 15px;
-        width: 25ch;
-        color: var(--textp);
-        font-size: 20px;
-        text-align: center;
-  
-      }
-  
-      .work-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        background: rgba(142, 138, 138, 0.26);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        width: 300px;
-        height: 100%;
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-  
-      .work-content img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 16px;
-      }
-  
-
-  
-  
-  
-  
-  
-  .workContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  .workContent h3 {
-    font-size: 20px;
-    color: var(--goldenYellow);
-    margin: 0;
-    text-align: left;
-  }
-  
-  .workContent p {
-    font-size: 15px;
-    color: var(--white);
-    margin: 0;
-    text-align: center;
-  }
-    }
-
-    @media screen and (min-width: 801px) and (max-width: 1000px) {
-
-      .work-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-      }
-  
-      .work-container h2 {
-        font-family: 'Bebas Neue', sans-serif;
-        font-size: 5rem;
-        color: var(--secondary);
-      }
-      .work {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-      
-      }
-  
-      hr {
-        width: 100%;
-        height: 1px;
-        background-color: var(--goldenYellow);
-        border: none;
-      }
-  
-      .work p {
-        margin-top: 15px;
-        width: 25ch;
-        color: var(--textp);
-        font-size: 20px;
-        text-align: center;
-  
-      }
-  
-      .work-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        background: rgba(142, 138, 138, 0.26);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        width: 400px;
-        height: 100%;
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-  
-      .work-content img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 16px;
-      }
-  
-  
-  
-  
-  
-  
-  .workContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  .workContent h3 {
-    font-size: 20px;
-    color: var(--goldenYellow);
-    margin: 0;
-    text-align: left;
-  }
-  
-  .workContent p {
-    font-size: 15px;
-    color: var(--white);
-    margin: 0;
-    text-align: center;
-  }
-  }
-
-  @media screen and (min-width: 1001px) and (max-width: 1482px) {
-    .work-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
       width: 100%;
       height: 100%;
+      z-index: 2;
+      text-align: center;
+
+    }
+    .work-content p{
+      font-size: 1.5rem;
+      width: 100%;
+      max-width: 40ch;
+      transition: var(--transition);
+    }
+    .work-content-head h2{
+      text-align: left;
+      transition: var(--transition);
     }
 
-    .work-container h2 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 8rem;
-      color: var(--secondary);
-    }
+
     .work {
       display: flex;
       flex-direction: column;
+      align-items: center;
       margin: 0;
       padding: 0;
       width: 100%;
       height: 100%;
+      z-index: 2;
+    }    
     
-    }
-
-    hr {
+    .work li {
+      list-style: none;
+      margin: 20px 0;
       width: 100%;
-      height: 1px;
-      background-color: var(--goldenYellow);
-      border: none;
-    }
-
-    .work p {
-      margin-top: 15px;
-      width: 25ch;
-      color: var(--textp);
-      font-size: 20px;
-      text-align: center;
-
-    }
-
-    .work-content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      background: rgba(142, 138, 138, 0.26);
-      border-radius: 16px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(5px);
-      -webkit-backdrop-filter: blur(5px);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      width: 400px;
       height: 100%;
-      margin-top: 20px;
-      margin-left: auto;
-      margin-right: auto;
+      padding: 20px;
+      transition: var(--transition);
     }
 
-    .work-content img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 16px;
+    .tech-container {
+      background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),  url("../../assets/images/tech.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .shop-container {
+      background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),  url("../../assets/images/tech.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .thoughts-container {
+      background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),  url("../../assets/images/thoughts.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }    
+    .watch-container {
+      background-image: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("../../assets/images/watch.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
     }
 
 
 
-
-
-
-.workContent {
+.links {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  text-decoration: none;
+  margin-top: 100px;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+
 }
 
-.workContent h3 {
-  font-size: 20px;
-  color: var(--goldenYellow);
-  margin: 0;
-  text-align: left;
+.links button {
+  margin: 0 10px 0 0;
 }
 
-.workContent p {
-  font-size: 15px;
-  color: var(--white);
-  margin: 0;
-  text-align: center;
-}
 
+
+
+    
+
+    
+
+@media screen and (max-width: 768px){
+  .work li {
+    width: 95%;
   }
+  .work-content p{
+    font-size: 1rem;
+    max-width: 40ch;
+  }
+  .work-content-head h2{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1300px){
+  .work li {
+    width: 95%;
+  }
+  .work-content p{
+    font-size: 1rem;
+    max-width: 40ch;
+  }
+  .work-content-head h2{
+    font-size: 2rem;
+  }
+}

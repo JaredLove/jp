@@ -1,14 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
+
 
 import './nav.css'
 
 const Header = ({handleNavigationClick, currentPage}) => {
   const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
-  const close = () => setIsOpen(false);
+  const [canScroll, setCanScroll] = useState(true);
+  const toggle = () => {setIsOpen(!isOpen); setCanScroll(!canScroll);}
+  const close = () => {setIsOpen(false); setCanScroll(!canScroll);}
 
 
+  useEffect(() => {
+    if (!canScroll) {
+      document.body.style.overflow = 'hidden';
+      document.body.style.height = '100%';
+      document.body.style.width = '100%';
+      document.body.style.position = 'fixed';
+    } else {
+      document.body.style.overflow = '';
+      document.body.style.height = '';
+      document.body.style.width = '';
+      document.body.style.position = '';
+    }
+  }, [canScroll]); // This effect depends on canScroll
   return (
     <header className="header">
     <nav className="navbar">

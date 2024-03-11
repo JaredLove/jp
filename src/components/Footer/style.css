@@ -3,8 +3,12 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     height: 500px;
     width: 100%;
+    max-width: var(--width);
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .connect {
@@ -16,16 +20,6 @@ footer {
     align-items: center;
 
 }
-  .connect h2 {
-    color: var(--secondary);
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 3.5rem;
-    font-weight: 400;
-    text-align: center;
-    width: 30ch;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   .social {
     padding-top: 50px;
@@ -45,24 +39,22 @@ footer {
     }
 
     .connect ul li a {
-        font-size: 50px;
         margin: 0 10px;
+        font-size: 2.5rem;
+        transition: var(--transition);
     }
-  .btn {
 
-    border: 1px solid var(--lightCharcoal);
-    border-radius: 10px;
-    padding: 10px;
-    background: none;
-    color: var(--primary);
-    font-size: 20px;
-  }
+    .connect ul li a:hover {
+      color: var(--tertiary);
+    }
+
 
 @media screen and (min-width: 50px ) and (max-width: 800px) {
   footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     height: 500px;
     width: 100%;
 }
@@ -77,18 +69,13 @@ footer {
 
 }
   .connect h2 {
-    color: var(--secondary);
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.3rem;
-    font-weight: 400;
+    font-size: 2.3rem;
     text-align: center;
-    width: 30ch;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 
   .social {
-    padding-top: 50px;
+    margin-top: 2%;
   }
 
   .connect ul {
@@ -105,18 +92,10 @@ footer {
     }
 
     .connect ul li a {
-        font-size: .9rem;
+        font-size: 1.9rem;
         margin: 0 10px;
     }
-  .btn {
 
-    border: 1px solid var(--lightCharcoal);
-    border-radius: 10px;
-    padding: 10px;
-    background: none;
-    color: var(--primary);
-    font-size: 20px;
-  }
     
 }
 
@@ -125,6 +104,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     height: 500px;
     width: 100%;
 }
@@ -139,18 +119,13 @@ footer {
 
 }
   .connect h2 {
-    color: var(--secondary);
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 3rem;
-    font-weight: 400;
+    font-size: 2.3rem;
     text-align: center;
-    width: 30ch;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 
   .social {
-    padding-top: 50px;
+    margin-top: 2%;
   }
 
   .connect ul {
@@ -167,17 +142,8 @@ footer {
     }
 
     .connect ul li a {
-        font-size: 2.5rem;
+        font-size: 1.9rem;
         margin: 0 10px;
     }
-  .btn {
-
-    border: 1px solid var(--lightCharcoal);
-    border-radius: 10px;
-    padding: 10px;
-    background: none;
-    color: var(--primary);
-    font-size: 20px;
-  }
 }
  
