@@ -10,31 +10,19 @@
     max-width: var(--width);
     margin: 10% auto 5% auto;
     overflow: hidden;
-  }
-
-
-
-  .about-bg {
-  background-color: var(--rgba);
-  position: absolute;
-  width: 200vw;
-  height: 100vh;
-  transform: rotate(20deg);
-  z-index: 1;
-  opacity: 1;
-  overflow: hidden;
-  }
+  } 
   .about-header h2 {
     color: var(--tertiary);
     font-size: 10rem;
     transition: var(--transition);
+    text-align: center;
    }
 
 
   .about-content {
     display: flex;
     justify-content: center;
-    align-items: left;
+    align-items: center;
     flex-direction: column;
     z-index: 2;
     overflow: hidden;

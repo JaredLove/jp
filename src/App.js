@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Home from './pages/Home.js';
 import Mouse from './components/Mouse';
 import Header from './components/Header';
@@ -10,7 +10,11 @@ import Footer from './components/Footer';
 
   const App = () => {
     // const [isLoading, setIsLoading] = useState(true);
- 
+    const [currentSection, setCurrentSection] = useState('home');
+    const handleNavigationClick = (section) => {
+      setCurrentSection(section);
+      console.log(section);
+    }
 
     // useEffect(() => {
     //   // Simulate an asynchronous operation (e.g., API call or data loading)
@@ -24,13 +28,21 @@ import Footer from './components/Footer';
      {/* {isLoading ? (
         <Loading />
       ) : ( */}
-      <Header />
+      <Header currentSection={currentSection} handleNavigationClick={handleNavigationClick}/>
       <Mouse />
       <Home />
-      <About />      
+      <section id='about'>
+        <About />  
+      </section>
+      <section id='resume'>    
       <Resume />
+      </section>
+      <section id='work'>
       <Work />
+      </section>
+      <section id='contact'>
       <Footer />
+      </section>
   </>
 
   );

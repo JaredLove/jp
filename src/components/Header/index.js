@@ -4,12 +4,11 @@ import { FaBars } from "react-icons/fa";
 
 import './nav.css'
 
-const Header = ({handleNavigationClick, currentPage}) => {
+const Header = ({handleNavigationClick, currentSection}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [canScroll, setCanScroll] = useState(true);
-  const toggle = () => {setIsOpen(!isOpen); setCanScroll(!canScroll);}
-  const close = () => {setIsOpen(false); setCanScroll(!canScroll);}
-
+  const toggle = () => {setIsOpen(!isOpen); setCanScroll(false);}
+  const close = () => {setIsOpen(false); setCanScroll(true);}
 
   useEffect(() => {
     if (!canScroll) {
@@ -38,16 +37,16 @@ const Header = ({handleNavigationClick, currentPage}) => {
           className={`navbar-nav ${isOpen ? "navbar-open" : "navbar-closed"}`}
         >
           <li className="nav-item">
-          <button   onClick={() => {handleNavigationClick('about'); close();}}  style={{ color: currentPage === 'about' ? '#777777' : '#ecedee' }}><a href="#about" >About</a></button>
+          <button   onClick={() => {handleNavigationClick('about'); close();}}  style={{ color: currentSection === 'about' ? '#777777' : '#ecedee' }}><a href="#about" >About</a></button>
           </li>
           <li className="nav-item">
-          <button onClick={() => {handleNavigationClick('resume'); close();}} style={{ color: currentPage === 'resume' ? '#777777' : '#ecedee' }}><a href="#resume">Expertise</a></button>
+          <button onClick={() => {handleNavigationClick('resume'); close();}} style={{ color: currentSection === 'resume' ? '#777777' : '#ecedee' }}><a href="#resume">Expertise</a></button>
           </li>
           <li className="nav-item">
-          <button onClick={() => {handleNavigationClick('work'); close();}} style={{ color: currentPage === 'work' ? '#777777' : '#ecedee' }}><a href="#work">Work</a></button>
+          <button onClick={() => {handleNavigationClick('work'); close();}} style={{ color: currentSection === 'work' ? '#777777' : '#ecedee' }}><a href="#work">Work</a></button>
           </li>
           <li className="nav-item">
-          <button onClick={() => {handleNavigationClick('contact'); close();}} style={{ color: currentPage === 'contact' ? '#777777' : '#ecedee' }}><a href="#contact">Contact</a></button>
+          <button onClick={() => {handleNavigationClick('contact'); close();}} style={{ color: currentSection === 'contact' ? '#777777' : '#ecedee' }}><a href="#contact">Contact</a></button>
           </li>
         </ul>
       </div>
